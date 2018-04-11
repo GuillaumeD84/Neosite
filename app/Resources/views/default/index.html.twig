@@ -1,5 +1,53 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Développeur Web{% endblock %}
+
 {% block body %}
-    <h1>Neosite</h1>
+    <aside id="navigation">
+        <div id="myself">
+            <img src="" alt="photo guillaume durand">
+            <h1>Guillaume DURAND</h1>
+            <h2>Développeur Web</h2>
+        </div>
+
+        <div id="navLinks">
+            <ul id="pageLinks" class="links">
+                <li><a href="">Mes compétences</a></li>
+                <li><a href="">Ma formation</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">A propos de moi</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            
+            <ul id="socialLinks" class="links">
+                <li>
+                    <a href="">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="" class="icon">&#9776;</a>
+        </div>
+    </aside>
+
+    <div id="content">
+        Bonjour je m'appelle Guillaume DURAND.
+        Je suis un jeune développeur web (la suite .....).
+    </div>
 {% endblock body %}

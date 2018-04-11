@@ -1,0 +1,67 @@
+aside#navigation,
+div#content {
+    float: left;
+    width: 100%;
+    text-align: center;
+
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+aside#navigation a {
+    text-decoration: none;
+}
+
+aside #myself {
+    text-align: center;
+}
+
+#navLinks ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul#pageLinks {
+    display: none;
+}
+
+ul#socialLinks li {
+    display: inline;
+}
+
+ul#socialLinks {
+    float: left;
+    margin: 0;
+}
+
+a.icon {
+    float: right;
+}
+
+@media screen and (min-width: 768px) {
+    aside#navigation,
+    div#content {
+        text-align: left;
+    }
+
+    a.icon {
+        display: none;
+    }
+
+    ul#pageLinks {
+        display: block;
+    }
+
+    ul#socialLinks {
+        float: none;
+    }
+
+    aside#navigation {
+        width: 400px;
+    }
+
+    div#content {
+        width: calc(100% - 420px);
+    }
+}
