@@ -12,11 +12,13 @@
 
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
         <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/navigation.css') }}">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
+
+        <script src="{{ asset('js/navigation.js') }}"></script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

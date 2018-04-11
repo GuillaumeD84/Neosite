@@ -16,27 +16,33 @@ aside #myself {
     text-align: center;
 }
 
+#navExtendable ul,
 #navLinks ul {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
 }
 
-ul#pageLinks {
-    display: none;
-}
-
-ul#socialLinks li {
+.social li {
     display: inline;
 }
 
-ul#socialLinks {
+#navExtendable .social {
     float: left;
     margin: 0;
 }
 
-a.icon {
+span.burger-icon {
     float: right;
+}
+
+aside #navLinks {
+    clear: both;
+}
+
+aside #navLinks #pageLinks,
+aside #navLinks .social {
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -45,16 +51,13 @@ a.icon {
         text-align: left;
     }
 
-    a.icon {
+    aside #navExtendable {
         display: none;
     }
 
-    ul#pageLinks {
+    aside #navLinks #pageLinks,
+    aside #navLinks .social {
         display: block;
-    }
-
-    ul#socialLinks {
-        float: none;
     }
 
     aside#navigation {

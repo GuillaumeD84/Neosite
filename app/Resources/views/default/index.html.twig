@@ -10,39 +10,31 @@
             <h2>Développeur Web</h2>
         </div>
 
+        <div id="navExtendable">
+            {% include 'partials/_social_links.html.twig' %}
+            <span class="burger-icon">&#9776;</span>
+        </div>
+
         <div id="navLinks">
             <ul id="pageLinks" class="links">
-                <li><a href="">Mes compétences</a></li>
-                <li><a href="">Ma formation</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">A propos de moi</a></li>
-                <li><a href="">Contact</a></li>
+                <li>
+                    <a href="">Mes compétences</a>
+                </li>
+                <li>
+                    <a href="">Ma formation</a>
+                </li>
+                <li>
+                    <a href="">Portfolio</a>
+                </li>
+                <li>
+                    <a href="">A propos de moi</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
             </ul>
             
-            <ul id="socialLinks" class="links">
-                <li>
-                    <a href="">
-                        <i class="far fa-envelope"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-            </ul>
-
-            <a href="" class="icon">&#9776;</a>
+            {% include 'partials/_social_links.html.twig' %}
         </div>
     </aside>
 
