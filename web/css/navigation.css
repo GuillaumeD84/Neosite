@@ -1,70 +1,100 @@
-aside#navigation,
-div#content {
-    float: left;
-    width: 100%;
-    text-align: center;
-
-    box-sizing: border-box;
-    padding: 20px;
-}
-
-aside#navigation a {
+aside#nav a {
     text-decoration: none;
 }
 
-aside #myself {
+body {
+    margin: 16px 0;
+}
+
+aside#nav {
     text-align: center;
 }
 
+#nav-top {
+    margin-bottom: 16px;
+}
+
+#nav-top #name {
+    font-size: 8vw;
+}
+
+#nav-top #title {
+    font-size: 6vw;
+}
+
+aside #profilPic {
+    width: 100%;
+    border-radius: 50%;
+}
+
+ul.social-links,
 #navExtendable ul,
 #navLinks ul {
     list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-.social li {
-    display: inline;
-}
-
-#navExtendable .social {
-    float: left;
     margin: 0;
+    padding: 0;
 }
 
-span.burger-icon {
-    float: right;
+.social-links li {
+    display: inline;
+    font-size: 1.4em;
+}
+
+.navbar-brand img {
+    height: 30px;
+    width: 30px;
+}
+
+ul.social-links li {
+    padding: 8px;
+}
+
+nav button.navbar-toggler {
+    font-size: 1rem;
+    border: none;
+}
+
+nav .navbar-toggler-icon {
+    height: 1.5em;
+    line-height: 1.5em;;
+    vertical-align: middle;
+    background-image: none !important;
+    color: black;
 }
 
 aside #navLinks {
-    clear: both;
-}
-
-aside #navLinks #pageLinks,
-aside #navLinks .social {
     display: none;
+    text-align: left;
 }
 
 @media screen and (min-width: 768px) {
-    aside#navigation,
-    div#content {
-        text-align: left;
+    #nav-top #name {
+        font-size: 3vw;
     }
 
-    aside #navExtendable {
+    #nav-top #title {
+        font-size: 2.5vw;
+    }
+
+    nav.navbar {
         display: none;
     }
 
-    aside #navLinks #pageLinks,
-    aside #navLinks .social {
+    aside #navLinks {
         display: block;
     }
 
-    aside#navigation {
-        width: 400px;
+    .social-links li {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #nav-top #name {
+        font-size: 1.8vw;
     }
 
-    div#content {
-        width: calc(100% - 420px);
+    #nav-top #title {
+        font-size: 1.5vw;
     }
 }

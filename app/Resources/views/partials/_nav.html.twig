@@ -1,0 +1,61 @@
+<aside id="nav" class="col-12 col-md-4 col-xl-3">
+    <div id="nav-top">
+        <img id="profilPic" src="{{ asset('img/default-profil.jpg') }}" alt="photo de profil de guillaume durand">
+        <h1 id="name">Guillaume DURAND</h1>
+        <h2 id="title">Développeur Web</h2>
+        
+        <div class="d-none d-md-block">
+            {% include 'partials/_social_links.html.twig' %}
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="{{ asset('favicon.ico') }}" class="d-inline-block align-top" alt="">
+        </a>
+        {% include 'partials/_social_links.html.twig' %}
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">&#9776;</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Mes compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ma formation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">A propos de moi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="navLinks">
+        <ul id="pageLinks" class="links">
+            <li>
+                <a href="">Mes compétences</a>
+            </li>
+            <li>
+                <a href="">Ma formation</a>
+            </li>
+            <li>
+                <a href="">Portfolio</a>
+            </li>
+            <li>
+                <a href="">A propos de moi</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+    </div>
+</aside>

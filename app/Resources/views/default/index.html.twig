@@ -3,43 +3,17 @@
 {% block title %}Développeur Web{% endblock %}
 
 {% block body %}
-    <aside id="navigation">
-        <div id="myself">
-            <img src="" alt="photo guillaume durand">
-            <h1>Guillaume DURAND</h1>
-            <h2>Développeur Web</h2>
-        </div>
+    {# Navigation container #}
+    <div class="container">
+        <div class="row">
+            {# Aside nav #}
+            {% include 'partials/_nav.html.twig' %}
 
-        <div id="navExtendable">
-            {% include 'partials/_social_links.html.twig' %}
-            <span class="burger-icon">&#9776;</span>
+            {# Main content #}
+            <main class="col-12 col-md-8 col-xl-9">
+                Bonjour je m'appelle Guillaume DURAND.
+                Je suis un jeune développeur web (la suite .....).
+            </main>
         </div>
-
-        <div id="navLinks">
-            <ul id="pageLinks" class="links">
-                <li>
-                    <a href="">Mes compétences</a>
-                </li>
-                <li>
-                    <a href="">Ma formation</a>
-                </li>
-                <li>
-                    <a href="">Portfolio</a>
-                </li>
-                <li>
-                    <a href="">A propos de moi</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
-                </li>
-            </ul>
-            
-            {% include 'partials/_social_links.html.twig' %}
-        </div>
-    </aside>
-
-    <div id="content">
-        Bonjour je m'appelle Guillaume DURAND.
-        Je suis un jeune développeur web (la suite .....).
     </div>
 {% endblock body %}
