@@ -1,0 +1,26 @@
+.project {
+    margin-bottom: 2em;
+}
+
+.project img {
+    display: block;
+    margin: auto;
+}
+
+.project .categories {
+    clear: both;
+}
+
+@media screen and (min-width: 768px) {
+    .project img {
+        display: inline;
+    }
+    .project:nth-of-type(2n+1) img {
+        float: left;
+        margin-right: 10px;
+    }
+    .project:nth-of-type(2n) img {
+        float: right;
+        margin-left: 10px;
+    }
+}

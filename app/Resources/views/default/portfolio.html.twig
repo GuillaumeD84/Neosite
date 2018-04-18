@@ -2,6 +2,10 @@
 
 {% block title %}Portfolio{% endblock %}
 
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
+{% endblock %}
+
 {% block body %}
     {# Navigation container #}
     <div class="container">
@@ -11,7 +15,9 @@
 
             {# Main content #}
             <main class="col-12 col-md-8 col-xl-9">
-                Portfolio.
+                <h1>Portfolio</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ratione esse perferendis temporibus illo consequatur sint maiores autem eum sed. Explicabo quas fugiat deserunt tempore saepe! Dolorem officia voluptatum architecto!</p>
+                {% include 'partials/_portfolio.html.twig' %}
             </main>
         </div>
     </div>
