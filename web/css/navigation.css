@@ -3,11 +3,40 @@ aside#nav a {
 }
 
 body {
-    margin: 16px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    aside#nav,
+    main {
+        min-height: 100vh;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+}
+
+aside#nav,
+main {
+    padding-top: 16px;
 }
 
 aside#nav {
     text-align: center;
+    padding-top: 16px;
+
+    /* https://css-tricks.com/tinted-images-multiple-backgrounds/ */
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(12, 52, 112, 0.3), 
+      rgba(12, 52, 112, 0.3)
+    ),
+    /* bottom, image */
+    url('../img/city-wallpaper-4.jpg');
 }
 
 #nav-top {
@@ -16,10 +45,12 @@ aside#nav {
 
 #nav-top #name {
     font-size: 8vw;
+    color: blanchedalmond;
 }
 
 #nav-top #title {
     font-size: 6vw;
+    color: blanchedalmond;
 }
 
 aside #profilPic {
@@ -59,7 +90,11 @@ nav .navbar-toggler-icon {
     line-height: 1.5em;;
     vertical-align: middle;
     background-image: none !important;
-    color: black;
+    color: blanchedalmond;
+}
+
+#nav .nav-link {
+    color: blanchedalmond;
 }
 
 aside #navLinks {
