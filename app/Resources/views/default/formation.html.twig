@@ -2,6 +2,10 @@
 
 {% block title %}Formation{% endblock %}
 
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/formation.css') }}">
+{% endblock %}
+
 {% block body %}
     {# Navigation container #}
     <div class="container">
@@ -13,8 +17,11 @@
             <main class="col-12 col-md-8 col-xl-9">
                 <h1>Ma formation</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias sit eius officiis quia, delectus nemo voluptates aliquam! Ut totam, atque ducimus consequuntur, fugit expedita quo non soluta, eos recusandae sed?</p>
-                <div class="row">
-                    {# <div class="col-2">flèche en pos relative</div> #}
+                <div class="row formations">
+                    <div class="col-2 time-arrow">
+                        <div class="top"></div>
+                        <div class="arrow-box"></div>
+                    </div>
                     {% include 'partials/_formation.html.twig' %}
                 </div>
             </main>

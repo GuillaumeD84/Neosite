@@ -1,0 +1,59 @@
+.formations {
+    position: relative;
+}
+
+.time-arrow {
+    position: absolute;
+    height: 100%;
+}
+
+.timestamp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timestamp time {
+    text-align: center;
+    background-color: rgba(250, 250, 250, 1);
+    border-radius: 6px;
+}
+
+.time-arrow .top {
+    background-color: rgb(0, 0, 0);
+    height: 6px;
+    width: 40%;
+    margin: auto;
+}
+
+/* http://www.cssarrowplease.com/ */
+.time-arrow .arrow-box {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    height: calc(100% - 2em);
+    width: 6px;
+    margin: auto;
+}
+.time-arrow .arrow-box:after,
+.time-arrow .arrow-box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.time-arrow .arrow-box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: rgb(0, 0, 0);
+	border-width: 1em;
+	margin-left: -1em;
+}
+.time-arrow .arrow-box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-top-color: rgb(92, 92, 92);
+	border-width: 1.15em;
+	margin-left: -1.15em;
+}
