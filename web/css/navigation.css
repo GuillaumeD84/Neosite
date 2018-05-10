@@ -3,7 +3,8 @@ aside#nav a {
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Play', sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -25,18 +26,20 @@ main {
 }
 
 aside#nav {
+    font-family: 'Play', sans-serif;
     text-align: center;
     padding-top: 16px;
 
     /* https://css-tricks.com/tinted-images-multiple-backgrounds/ */
-    background: 
-    /* top, transparent red, faked with gradient */ 
+    background:
+    /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(12, 52, 112, 0.3), 
-      rgba(12, 52, 112, 0.3)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ),
     /* bottom, image */
-    url('../img/city-wallpaper-4.jpg');
+    /* url('../img/city-wallpaper-4.jpg'); */
+    url('../img/hexagon_wallpaper_by_voidnu_edited.jpg');
 }
 
 #nav-top {
@@ -45,12 +48,19 @@ aside#nav {
 
 #nav-top #name {
     font-size: 8vw;
-    color: blanchedalmond;
+    /* color: blanchedalmond; */
+    color: rgba(240, 240, 240, 1);
 }
 
 #nav-top #title {
     font-size: 6vw;
-    color: blanchedalmond;
+    /* color: blanchedalmond; */
+    color: rgba(240, 240, 240, 1);
+}
+
+#nav-top #subtitle {
+    font-size: 6vw;
+    color: rgba(240, 240, 240, 1);
 }
 
 aside #profilPic {
@@ -111,6 +121,10 @@ aside #navLinks {
         font-size: 2.5vw;
     }
 
+    #nav-top #subtitle {
+        font-size: 2.5vw;
+    }
+
     nav.navbar {
         display: none;
     }
@@ -130,6 +144,10 @@ aside #navLinks {
     }
 
     #nav-top #title {
+        font-size: 1.5vw;
+    }
+
+    #nav-top #subtitle {
         font-size: 1.5vw;
     }
 }

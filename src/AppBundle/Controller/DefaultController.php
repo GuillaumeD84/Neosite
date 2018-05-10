@@ -3,12 +3,17 @@
 namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\ResponseHeaderBag;
 
 class DefaultController extends Controller
 {
     /**
+     * Home page
+     *
      * @Route("/", name="homepage")
+     * @Method({"GET"})
      */
     public function indexAction()
     {
@@ -16,42 +21,70 @@ class DefaultController extends Controller
     }
 
     /**
+     * A list of my skills in web dev
+     *
      * @Route("/skills", name="skills")
+     * @Method({"GET"})
      */
-    public function indexSkills()
+    public function skillsAction()
     {
         return $this->render('default/skills.html.twig');
     }
 
     /**
+     * My formations relating to web dev
+     *
      * @Route("/formation", name="formation")
+     * @Method({"GET"})
      */
-    public function indexFormation()
+    public function formationAction()
     {
         return $this->render('default/formation.html.twig');
     }
 
     /**
+     * A small list of various web projects
+     *
      * @Route("/portfolio", name="portfolio")
+     * @Method({"GET"})
      */
-    public function indexPortfolio()
+    public function portfolioAction()
     {
         return $this->render('default/portfolio.html.twig');
     }
 
     /**
+     * A very short description of me
+     *
      * @Route("/aboutme", name="aboutme")
+     * @Method({"GET"})
      */
-    public function indexAboutme()
+    public function aboutmeAction()
     {
         return $this->render('default/aboutme.html.twig');
     }
 
     /**
+     * Contact links
+     *
      * @Route("/contact", name="contact")
+     * @Method({"GET"})
      */
-    public function indexContact()
+    public function contactAction()
     {
         return $this->render('default/contact.html.twig');
+    }
+
+    /**
+     * Display my CV
+     *
+     * @Route("/curriculum", name="curriculum")
+     * @Method({"GET"})
+     */
+    public function curriculumAction()
+    {
+      $pdfPath = 'downloads/sample.pdf';
+
+      return $this->file($pdfPath, 'guillaume_durand_cv.pdf', ResponseHeaderBag::DISPOSITION_INLINE);
     }
 }
