@@ -1,35 +1,14 @@
-<div class="project" data-project-name="project-1">
-    <h2>Projet 1</h2>
+{% for project in projects %}
+  <div class="project" data-project-name="{{ project.name }}">
+    <h2>{{ project.name }}</h2>
     <div class="categories">
-        <span class="category">Cat 1</span>
-        <span class="category">Cat 2</span>
-        <span class="category">Cat 3</span>
+      {% for cat in project.cat %}
+        <span class="category">{{ cat|upper }}</span>
+      {% endfor %}
     </div>
-    <img src="https://picsum.photos/300/200/?random" alt="">
-    <p>description project 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, doloremque eligendi maiores, dolor neque repellendus quibusdam ipsum architecto soluta qui quae, ad libero alias eveniet numquam accusamus vitae? Molestiae, molestias.</p>
+    <img src="https://picsum.photos/30{{ loop.index0 }}/200/?random" alt="">
+    <p>{{ project.desc }}</p>
+    <button type="button" class="more-details" name="button">Plus de détails</button>
     <span class="end"></span>
-</div>
-
-<div class="project" data-project-name="project-1">
-    <h2>Projet 2</h2>
-    <div class="categories">
-        <span class="category">Cat 1</span>
-        <span class="category">Cat 2</span>
-        <span class="category">Cat 3</span>
-    </div>
-    <img src="https://picsum.photos/301/200/?random" alt="">
-    <p>description project 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quam velit veritatis quibusdam iste, fuga pariatur commodi explicabo praesentium dolorem, perspiciatis aliquid iure delectus quaerat eligendi libero! Aspernatur, vero velit?</p>
-    <span class="end"></span>
-</div>
-
-<div class="project" data-project-name="project-1">
-    <h2>Projet 3</h2>
-    <div class="categories">
-        <span class="category">Cat 1</span>
-        <span class="category">Cat 2</span>
-        <span class="category">Cat 3</span>
-    </div>
-    <img src="https://picsum.photos/302/200/?random" alt="">
-    <p>description project 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nemo, iusto facilis facere tempora error assumenda rerum reiciendis itaque dolor, vitae illo? Suscipit harum animi recusandae repellendus alias dolores voluptate.</p>
-    <span class="end"></span>
-</div>
+  </div>
+{% endfor %}

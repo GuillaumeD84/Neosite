@@ -2,6 +2,12 @@ aside#nav a {
     text-decoration: none;
 }
 
+aside#nav .navbar-brand i,
+aside#nav .navbar-toggler-icon {
+    color: rgba(240, 240, 240, 1);
+    font-size: 1.5em;
+}
+
 body {
     /* font-family: 'Quicksand', sans-serif; */
     font-family: 'Play', sans-serif;
@@ -150,4 +156,8 @@ aside #navLinks {
     #nav-top #subtitle {
         font-size: 1.5vw;
     }
+}
+
+#nav .active-page {
+  color: white;
 }

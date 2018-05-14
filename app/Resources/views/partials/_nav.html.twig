@@ -15,7 +15,7 @@
 
     <nav class="navbar navbar-light">
         <a class="navbar-brand" href="#">
-            <img src="{{ asset('favicon.ico') }}" class="d-inline-block align-top" alt="">
+            <i class="fa fa-home"></i>
         </a>
         {% include 'partials/_social_links.html.twig' %}
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,22 +24,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{ path('skills') }}">Mes compétences</a>
+                    <a class="nav-link {{ app.request.get('_route') == 'skills' ? 'active-page' }}" href="{{ path('skills') }}">Mes compétences</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ path('formation') }}">Ma formation</a>
+                    <a class="nav-link {{ app.request.get('_route') == 'formation' ? 'active-page' }}" href="{{ path('formation') }}">Ma formation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ path('portfolio') }}">Portfolio</a>
+                    <a class="nav-link {{ app.request.get('_route') == 'portfolio' ? 'active-page' }}" href="{{ path('portfolio') }}">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ path('aboutme') }}">A propos de moi</a>
+                    <a class="nav-link {{ app.request.get('_route') == 'aboutme' ? 'active-page' }}" href="{{ path('aboutme') }}">A propos de moi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ path('contact') }}">Contact</a>
+                    <a class="nav-link {{ app.request.get('_route') == 'contact' ? 'active-page' }}" href="{{ path('contact') }}">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ path('curriculum') }}">Obtenir mon CV</a>
+                    <a class="nav-link {{ app.request.get('_route') == 'curriculum' ? 'active-page' }}" href="{{ path('curriculum') }}">Obtenir mon CV</a>
                 </li>
             </ul>
         </div>
@@ -48,22 +48,22 @@
     <div id="navLinks">
         <ul id="pageLinks" class="links">
             <li>
-                <a href="{{ path('skills') }}">Mes compétences</a>
+                <a class="{{ app.request.get('_route') == 'skills' ? 'active-page' }}" href="{{ path('skills') }}">Mes compétences</a>
             </li>
             <li>
-                <a href="{{ path('formation') }}">Ma formation</a>
+                <a class="{{ app.request.get('_route') == 'formation' ? 'active-page' }}" href="{{ path('formation') }}">Ma formation</a>
             </li>
             <li>
-                <a href="{{ path('portfolio') }}">Portfolio</a>
+                <a class="{{ app.request.get('_route') == 'portfolio' ? 'active-page' }}" href="{{ path('portfolio') }}">Portfolio</a>
             </li>
             <li>
-                <a href="{{ path('aboutme') }}">A propos de moi</a>
+                <a class="{{ app.request.get('_route') == 'aboutme' ? 'active-page' }}" href="{{ path('aboutme') }}">A propos de moi</a>
             </li>
             <li>
-                <a href="{{ path('contact') }}">Contact</a>
+                <a class="{{ app.request.get('_route') == 'contact' ? 'active-page' }}" href="{{ path('contact') }}">Contact</a>
             </li>
             <li>
-                <a href="{{ path('curriculum') }}" target="_blank">Obtenir mon CV</a>
+                <a class="{{ app.request.get('_route') == 'curriculum' ? 'active-page' }}" href="{{ path('curriculum') }}" target="_blank">Obtenir mon CV</a>
             </li>
         </ul>
     </div>

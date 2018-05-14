@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Todo List{% endblock %}
+
+{% block body %}
+  <h1>Une todo list</h1>
+  LIEN-VERS-GIT
+  <p>
+    Comme tout bon développeur PHP le sait, les superglobales sont essentielles et il est donc important de savoir les manipuler. Dans cet exercice nous nous sommes servis des suivantes : $_GET, $_POST et $_SESSION, pour la création d'une todolist.
+    Cette liste contient par défaut plusieurs tâches et chacunes d'entre elle possède :
+    <ul>
+      <li>Une couleur</li>
+      <li>Une catégorie</li>
+      <li>Un état (todo ou completed)</li>
+    </ul>
+    Il est également possible de modifier ces informations, de créer de nouvelles tâches, de les filtrer ou encore de les supprimer grâce aux superglobales $_GET et $_POST. La variable $_SESSION quand à elle a été utilisé pour stocker ces changements/ajouts.
+  </p>
+
+  <h2>Objectifs</h2>
+  <ul>
+    <li>Exploiter les variables $_GET, $_POST et $_SESSION</li>
+    <li>Manipuler des données</li>
+    <li>Rendre la liste dynamique</li>
+  </ul>
+
+  <h2>Résultat</h2>
+  IMAGES-DE-LEXERCICE
+{% endblock body %}
