@@ -2,6 +2,12 @@
 
 {% block title %}Un site responsive{% endblock %}
 
+{% block stylesheets %}
+  <link rel="stylesheet" href="{{ asset('css/portfolio/responsive.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/portfolio/slideshow.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/portfolio/modal.css') }}">
+{% endblock %}
+
 {% block main %}
   <h1>Un site responsive</h1>
   LIEN-VERS-GIT
@@ -19,16 +25,57 @@
   </ul>
 
   <h2>Résultat</h2>
-  <div class="row">
-    <div class="col-4">
-      <img src="{{ asset('img/portfolio/responsive/responsive_small.png') }}" alt="capture écran page web version mobile">
-    </div>
-    <div class="col-4">
-      <img src="{{ asset('img/portfolio/responsive/responsive_medium.png') }}" alt="capture écran page web version tablette">
-    </div>
-    <div class="col-4">
-      <img src="{{ asset('img/portfolio/responsive/responsive_wide.png') }}" alt="capture écran page web écran large">
+  <div id="resultImg" class="row">
+    <div class="col-12">
+
+      <!-- The dots/circles -->
+      <div id="slideshowNavigation">
+        <!-- Next and previous buttons -->
+        <div class="slideshowArrow">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        </div>
+        <div id="slideshowDots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="slideshowArrow">
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides">
+          <div class="text">Affichage sur un mobile</div>
+          <img class="result-screenshot small" src="{{ asset('img/portfolio/responsive/responsive_small.png') }}" alt="Capture d'écran de la page web sur un mobile">
+        </div>
+
+        <div class="mySlides">
+          <div class="text">Affichage sur une tablette</div>
+          <img class="result-screenshot medium" src="{{ asset('img/portfolio/responsive/responsive_medium.png') }}" alt="Capture d'écran de la page web sur une tablette">
+        </div>
+
+        <div class="mySlides">
+          <div class="text">Affichage sur un écran large</div>
+          <img class="result-screenshot wide" src="{{ asset('img/portfolio/responsive/responsive_wide.png') }}" alt="Capture d'écran de la page web sur un écran large">
+        </div>
+
+      </div>
+
+      <div id="resultScreenshotModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content">
+        <div id="caption"></div>
+      </div>
+
     </div>
   </div>
-  {% block javascripts %}{% endblock %}
+
+  {% block javascripts %}
+    <script src="{{ asset('js/portfolio/slideshow.js') }}"></script>
+    <script src="{{ asset('js/portfolio/modal.js') }}"></script>
+  {% endblock %}
 {% endblock main %}

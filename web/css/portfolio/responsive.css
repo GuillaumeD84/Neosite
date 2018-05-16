@@ -1,0 +1,28 @@
+.result-screenshot {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.result-screenshot:hover {opacity: 0.7;}
+
+@media screen and (min-width: 768px) {
+  .result-screenshot.small {
+    padding: 0 20%;
+  }
+
+  .result-screenshot.medium {
+    padding: 0 10%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .result-screenshot.small {
+    padding: 0 30%;
+  }
+
+  .result-screenshot.medium {
+    padding: 0 18%;
+  }
+}
