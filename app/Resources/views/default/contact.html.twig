@@ -2,23 +2,12 @@
 
 {% block title %}Contact{% endblock %}
 
-{% block body %}
-    {# Navigation container #}
-    <div class="container">
-        <div class="row">
-            {# Aside nav #}
-            {% include 'partials/_nav.html.twig' %}
-
-            {# Main content #}
-            <main class="col-12 col-md-8 col-xl-9">
-                <h1>Comment me contacter ?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur id possimus, consequuntur ipsam, nesciunt doloremque esse dolores aliquid ea tempore, corporis incidunt eum ab magni. Soluta totam fugiat deleniti minus.</p>
-                <ul>
-                    <li>email</li>
-                    <li>twitter</li>
-                    <li>linkedin</li>
-                </ul>
-            </main>
-        </div>
-    </div>
-{% endblock body %}
+{% block main %}
+  <h1>Comment me contacter ?</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur id possimus, consequuntur ipsam, nesciunt doloremque esse dolores aliquid ea tempore, corporis incidunt eum ab magni. Soluta totam fugiat deleniti minus.</p>
+  <ul>
+    <li>email</li>
+    <li>twitter</li>
+    <li>linkedin</li>
+  </ul>
+{% endblock main %}

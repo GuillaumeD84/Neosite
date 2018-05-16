@@ -2,7 +2,7 @@
 
 {% block title %}Un site responsive{% endblock %}
 
-{% block body %}
+{% block main %}
   <h1>Un site responsive</h1>
   LIEN-VERS-GIT
   <p>
@@ -19,5 +19,16 @@
   </ul>
 
   <h2>Résultat</h2>
-  IMAGES-DE-LEXERCICE
-{% endblock body %}
+  <div class="row">
+    <div class="col-4">
+      <img src="{{ asset('img/portfolio/responsive/responsive_small.png') }}" alt="capture écran page web version mobile">
+    </div>
+    <div class="col-4">
+      <img src="{{ asset('img/portfolio/responsive/responsive_medium.png') }}" alt="capture écran page web version tablette">
+    </div>
+    <div class="col-4">
+      <img src="{{ asset('img/portfolio/responsive/responsive_wide.png') }}" alt="capture écran page web écran large">
+    </div>
+  </div>
+  {% block javascripts %}{% endblock %}
+{% endblock main %}

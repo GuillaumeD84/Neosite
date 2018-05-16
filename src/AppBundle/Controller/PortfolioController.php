@@ -12,11 +12,56 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class PortfolioController extends Controller
 {
     /**
-     * @Route("/project1", name="project1")
+     * @Route("/responsive", name="responsive")
      * @Method({"GET"})
      */
-    public function project1Action()
+    public function responsiveAction()
     {
-        return $this->render('portfolio/project1.html.twig');
+        return $this->render('portfolio/responsive.html.twig');
+    }
+
+    /**
+     * @Route("/rich-snippet", name="rich_snippet")
+     * @Method({"GET"})
+     */
+    public function richSnippetAction()
+    {
+        return $this->render('portfolio/rich_snippet.html.twig');
+    }
+
+    /**
+     * @Route("/todolist", name="todolist")
+     * @Method({"GET"})
+     */
+    public function todolistAction()
+    {
+        return $this->render('portfolio/todolist.html.twig');
+    }
+
+    /**
+     * @Route("/memory", name="memory")
+     * @Method({"GET"})
+     */
+    public function memoryAction()
+    {
+        return $this->render('portfolio/memory.html.twig');
+    }
+
+    /**
+     * @Route("/faqoclock", name="faqoclock")
+     * @Method({"GET"})
+     */
+    public function faqoclockAction()
+    {
+        return $this->render('portfolio/faqoclock.html.twig');
+    }
+
+    /**
+     * @Route("/projetz", name="projetz")
+     * @Method({"GET"})
+     */
+    public function projetzAction()
+    {
+        return $this->render('portfolio/projetz.html.twig');
     }
 }

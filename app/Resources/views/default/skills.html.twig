@@ -2,97 +2,86 @@
 
 {% block title %}Mes compétences{% endblock %}
 
-{% block body %}
-    {# Navigation container #}
-    <div class="container">
-        <div class="row">
-            {# Aside nav #}
-            {% include 'partials/_nav.html.twig' %}
+{% block main %}
+  <h1>Mes compétences</h1>
+  <p>Cinq mois de formation intensive chez O'Clock m'ont permis de renforcer mes connaissances et d'acquérir les compétences necessaires pour devenir développeur web.</p>
 
-            {# Main content #}
-            <main class="col-12 col-md-8 col-xl-9">
-                <h1>Mes compétences</h1>
-                <p>Cinq mois de formation intensive chez O'Clock m'ont permis de renforcer mes connaissances et d'acquérir les compétences necessaires pour devenir développeur web.</p>
+  <h2>Les rudiments</h2>
+  <p>Mes premiers pas dans la création d'application web m'ont permis de m'éxercer aux langages HTML, CSS, JavaScript et afin de répondre aux besoins actuels des utilisateurs, j'ai également appris à utiliser l'Ajax ainsi qu'à manipuler les media queries et un framework CSS (Bootstrap pour mon cas) afin d'améliorer mes applications et à rendre mes sites web adaptables en fonction du support de consultation.</p>
+  <p>Pour pouvoir créer des applications plus complexes et dynamiques nous avons étudier le langage PHP et la programmation orienté objet. C'est alors que nous nous sommes intéressé à l'architecture MVC et aux bases de données relationnelles via SQL.</p>
+  <p>METTRE UNE LISTE SOUS FORME DE BADGE ? HTML CSS JavaScript Ajax RWD Bootstrap PHP POO MVC SQL</p>
 
-                <h2>Les rudiments</h2>
-                <p>Mes premiers pas dans la création d'application web m'ont permis de m'éxercer aux langages HTML, CSS, JavaScript et afin de répondre aux besoins actuels des utilisateurs, j'ai également appris à utiliser l'Ajax ainsi qu'à manipuler les media queries et un framework CSS (Bootstrap pour mon cas) afin d'améliorer mes applications et à rendre mes sites web adaptables en fonction du support de consultation.</p>
-                <p>Pour pouvoir créer des applications plus complexes et dynamiques nous avons étudier le langage PHP et la programmation orienté objet. C'est alors que nous nous sommes intéressé à l'architecture MVC et aux bases de données relationnelles via SQL.</p>
-                <p>METTRE UNE LISTE SOUS FORME DE BADGE ? HTML CSS JavaScript Ajax RWD Bootstrap PHP POO MVC SQL</p>
+  <h2>Symfony</h2>
+  <p>Pendant un mois je me suis éxercer sur le framework Symfony et on se rend rapidement compte de la puissance du framework pour concevoir et maintenir une application web.</p>
+  <p>Voici une liste des éléments que j'ai étudié :
+    <ul>
+      <li>Routing et contrôleurs</li>
+        <ul>
+          <li>Requête, front controller, routes, méthodes de contrôleurs, réponse</li>
+          <li>Cookies, Session et FlashMessages</li>
+          <li>Exposer les routes en JS avec FOSJsRoutingBundle</li>
+        </ul>
+      <li>Twig</li>
+        <ul>
+          <li>Twig avec Symfony</li>
+          <li>Personnaliser les pages d'erreur</li>
+          <li>Personnaliser les thèmes de formulaires ou de template CRUD avec Twig</li>
+          <li>Intégration de code JavaScript dans la vue</li>
+        </ul>
+      <li>JSON</li>
+        <ul>
+          <li>JSON avec Symfony</li>
+        </ul>
+      <li>Bases de données avec Doctrine</li>
+        <ul>
+          <li>Créer, utiliser la ligne de commande doctrine, sauvegarder, récupérer, mettre à jour, supprimer, architecture</li>
+          <li>Associations avec Doctrine</li>
+          <li>Doctrine Query Language (DQL), Doctrine QueryBuilder</li>
+          <li>Données de test, données factices avec Doctrine et Faker</li>
+        </ul>
+      <li>Formulaires</li>
+        <ul>
+          <li>Les formulaires (base)</li>
+          <li>Les formulaires avec Doctrine</li>
+        </ul>
+      <li>Sécurité</li>
+        <ul>
+          <li>Configurer le composant Security depuis une entité User</li>
+          <li>Condensé sur les Rôles</li>
+        </ul>
+      <li>Services</li>
+        <ul>
+          <li>Création d'un service</li>
+        </ul>
+      <li>Evénements</li>
+        <ul>
+          <li>Les événements avec Symfony</li>
+        </ul>
+      <li>Commandes Console</li>
+        <ul>
+          <li>Création d'une commande console</li>
+        </ul>
+      <li>Upload de fichier avec et sans Doctrine</li>
+        <ul>
+          <li>Upload lié à une entité Doctrine</li>
+          <li>Améliorer la gestion des fichiers uploadés</li>
+        </ul>
+      <li>Manipulation d'images avec LiipImagineBundle</li>
+        <ul>
+          <li>LiipImagineBundle</li>
+        </ul>
+      <li>Gestion des erreurs avec Symfony et PHP</li>
+        <ul>
+          <li>Résoudre les erreurs</li>
+        </ul>
+      <li>Tests</li>
+        <ul>
+          <li>Tests unitaires</li>
+          <li>Tests fonctionnels</li>
+        </ul>
+    </ul>
+  </p>
 
-                <h2>Symfony</h2>
-                <p>Pendant un mois je me suis éxercer sur le framework Symfony et on se rend rapidement compte de la puissance du framework pour concevoir et maintenir une application web.</p>
-                <p>Voici une liste des éléments que j'ai étudié :
-                  <ul>
-                    <li>Routing et contrôleurs</li>
-                      <ul>
-                        <li>Requête, front controller, routes, méthodes de contrôleurs, réponse</li>
-                        <li>Cookies, Session et FlashMessages</li>
-                        <li>Exposer les routes en JS avec FOSJsRoutingBundle</li>
-                      </ul>
-                    <li>Twig</li>
-                      <ul>
-                        <li>Twig avec Symfony</li>
-                        <li>Personnaliser les pages d'erreur</li>
-                        <li>Personnaliser les thèmes de formulaires ou de template CRUD avec Twig</li>
-                        <li>Intégration de code JavaScript dans la vue</li>
-                      </ul>
-                    <li>JSON</li>
-                      <ul>
-                        <li>JSON avec Symfony</li>
-                      </ul>
-                    <li>Bases de données avec Doctrine</li>
-                      <ul>
-                        <li>Créer, utiliser la ligne de commande doctrine, sauvegarder, récupérer, mettre à jour, supprimer, architecture</li>
-                        <li>Associations avec Doctrine</li>
-                        <li>Doctrine Query Language (DQL), Doctrine QueryBuilder</li>
-                        <li>Données de test, données factices avec Doctrine et Faker</li>
-                      </ul>
-                    <li>Formulaires</li>
-                      <ul>
-                        <li>Les formulaires (base)</li>
-                        <li>Les formulaires avec Doctrine</li>
-                      </ul>
-                    <li>Sécurité</li>
-                      <ul>
-                        <li>Configurer le composant Security depuis une entité User</li>
-                        <li>Condensé sur les Rôles</li>
-                      </ul>
-                    <li>Services</li>
-                      <ul>
-                        <li>Création d'un service</li>
-                      </ul>
-                    <li>Evénements</li>
-                      <ul>
-                        <li>Les événements avec Symfony</li>
-                      </ul>
-                    <li>Commandes Console</li>
-                      <ul>
-                        <li>Création d'une commande console</li>
-                      </ul>
-                    <li>Upload de fichier avec et sans Doctrine</li>
-                      <ul>
-                        <li>Upload lié à une entité Doctrine</li>
-                        <li>Améliorer la gestion des fichiers uploadés</li>
-                      </ul>
-                    <li>Manipulation d'images avec LiipImagineBundle</li>
-                      <ul>
-                        <li>LiipImagineBundle</li>
-                      </ul>
-                    <li>Gestion des erreurs avec Symfony et PHP</li>
-                      <ul>
-                        <li>Résoudre les erreurs</li>
-                      </ul>
-                    <li>Tests</li>
-                      <ul>
-                        <li>Tests unitaires</li>
-                        <li>Tests fonctionnels</li>
-                      </ul>
-                  </ul>
-                </p>
-
-                <h2>Autre chose ?</h2>
-                <p>Git, Slack, Opquast, méthodes agiles</p>
-            </main>
-        </div>
-    </div>
-{% endblock body %}
+  <h2>Autre chose ?</h2>
+  <p>Git, Slack, Opquast, méthodes agiles</p>
+{% endblock main %}

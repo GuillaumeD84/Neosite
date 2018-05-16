@@ -86,7 +86,7 @@ class DefaultController extends Controller
                     'name' => 'Un site de questions/réponses avec Symfony',
                     'cat' => ['symfony', 'nodejs', 'socketio', 'redis', 'phaser'],
                     'img' => 'projetz.jpg',
-                    'desc' => 'Mon plus gros projet réalisé avec une équipe. L\'objectif fut de créer un site web grâce au framework Symfony, qui permettrait aux utilisateurs d\'accéder à un jeu vidéo multijoueur développé à l\'aide du framework HTML5 : Phaser, le tout en les connectants entre eux via les technologies Node.js, Socket.IO et Redis.',
+                    'desc' => 'Mon plus gros projet réalisé avec une équipe. L\'objectif fut de créer un site web grâce au framework Symfony, qui permettrait aux utilisateurs d\'accéder à un jeu vidéo multijoueur développé à l\'aide du framework HTML5 : Phaser, le tout en les connectants entre eux via les technologies Node.js et Socket.IO.',
                 ],
             ]
         ]);

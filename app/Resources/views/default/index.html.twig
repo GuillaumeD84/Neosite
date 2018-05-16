@@ -2,18 +2,7 @@
 
 {% block title %}Développeur Web{% endblock %}
 
-{% block body %}
-    {# Navigation container #}
-    <div class="container">
-        <div class="row">
-            {# Aside nav #}
-            {% include 'partials/_nav.html.twig' %}
-
-            {# Main content #}
-            <main class="col-12 col-md-8 col-xl-9">
-                <h1>Salut moi c'est Guillaume</h1>
-                <p>Je suis un jeune développeur web nouvellement formé par l'école de formation en téléprésentiel : <span>O'Clock</span></p>
-            </main>
-        </div>
-    </div>
-{% endblock body %}
+{% block main %}
+  <h1>Salut moi c'est Guillaume</h1>
+  <p>Je suis un jeune développeur web nouvellement formé par l'école de formation en téléprésentiel : <span>O'Clock</span></p>
+{% endblock main %}
