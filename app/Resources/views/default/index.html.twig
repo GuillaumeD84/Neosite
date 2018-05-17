@@ -2,7 +2,10 @@
 
 {% block title %}Développeur Web{% endblock %}
 
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/index.css') }}">{% endblock %}
+
 {% block main %}
   <h1>Salut moi c'est Guillaume</h1>
-  <p>Je suis un jeune développeur web nouvellement formé par l'école de formation en téléprésentiel : <span>O'Clock</span></p>
+  <p>Je suis un jeune développeur web nouvellement formé par l'école de formation en téléprésentiel : <a href="https://oclock.io/">O'Clock</a>.</p>
+  <img src="http://via.placeholder.com/1280x720">
 {% endblock main %}

@@ -7,6 +7,11 @@
 
 .result-screenshot:hover {opacity: 0.7;}
 
+#resultScreenshotModal img {
+  margin: auto;
+  max-width: 80%;
+}
+
 @media screen and (min-width: 768px) {
   .result-screenshot.small {
     padding: 0 20%;
@@ -14,6 +19,10 @@
 
   .result-screenshot.medium {
     padding: 0 10%;
+  }
+
+  #resultScreenshotModal img {
+    max-width: 60%;
   }
 }
 
@@ -24,5 +33,9 @@
 
   .result-screenshot.medium {
     padding: 0 18%;
+  }
+
+  #resultScreenshotModal img {
+    max-width: 40%;
   }
 }

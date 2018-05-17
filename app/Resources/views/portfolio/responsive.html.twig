@@ -9,16 +9,17 @@
 {% endblock %}
 
 {% block main %}
-  <h1>Un site responsive</h1>
+  <h1>Un site web adaptatif</h1>
   LIEN-VERS-GIT
   <p>
-    Les supports étant de plus en plus variés (ordinateurs de bureau, tablettes, smartphone, télévision…), il est important d'offrir aux utilisateurs une interface de consultation adéquate peu importe ce dernier. C'était un exercice visant à adapter l'affichage des articles d'un blog via un framework CSS, ici : Bootstrap.
-    Bien sur il existe bien d'autre framework tel que Bulma ou encore Semantic UI, mais l'important ici fut de comprendre le fonctionnement des medias queries, à s'éxercer à utiliser un outil développé par d'autres personnes et à lire leur documentation.
+    Les supports étant de plus en plus variés (ordinateurs de bureau, tablettes, smartphone, télévision...), il est important d'offrir aux utilisateurs une interface de consultation adéquate peu importe ce dernier. C'était un exercice visant à adapter l'affichage des articles d'un blog via un framework <abbr title="Cascading Style Sheets">CSS</abbr>, ici : <a href="https://getbootstrap.com/">Bootstrap</a>.
+    Bien sûr il existe bien d'autres framework tel que <a href="https://bulma.io/">Bulma</a> ou encore <a href="https://semantic-ui.com/">Semantic UI</a>, mais l'important ici fut de comprendre le fonctionnement des medias queries, à s'exercer à utiliser un outil développé par d'autres personnes et à lire leur documentation.
   </p>
 
   <h2>Objectifs</h2>
   <ul>
     <li>S'initier aux medias queries</li>
+    <li>Respecter le concept du mobile first</li>
     <li>Utiliser un framework</li>
     <li>S'entrainer à lire une documentation</li>
     <li>Penser l'affichage d'un contenu selon le support</li>
@@ -48,28 +49,28 @@
       <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
-        <div class="mySlides">
-          <div class="text">Affichage sur un mobile</div>
-          <img class="result-screenshot small" src="{{ asset('img/portfolio/responsive/responsive_small.png') }}" alt="Capture d'écran de la page web sur un mobile">
-        </div>
+        <figure class="mySlides">
+          <figcaption class="text">Affichage sur un mobile</figcaption>
+          <img class="result-screenshot small" src="{{ asset('img/portfolio/responsive/responsive_small_lowres.jpg') }}" alt="Capture d'écran de la page web sur un mobile">
+        </figure>
 
-        <div class="mySlides">
-          <div class="text">Affichage sur une tablette</div>
-          <img class="result-screenshot medium" src="{{ asset('img/portfolio/responsive/responsive_medium.png') }}" alt="Capture d'écran de la page web sur une tablette">
-        </div>
+        <figure class="mySlides">
+          <figcaption class="text">Affichage sur une tablette</figcaption>
+          <img class="result-screenshot medium" src="{{ asset('img/portfolio/responsive/responsive_medium_lowres.jpg') }}" alt="Capture d'écran de la page web sur une tablette">
+        </figure>
 
-        <div class="mySlides">
-          <div class="text">Affichage sur un écran large</div>
-          <img class="result-screenshot wide" src="{{ asset('img/portfolio/responsive/responsive_wide.png') }}" alt="Capture d'écran de la page web sur un écran large">
-        </div>
+        <figure class="mySlides">
+          <figcaption class="text">Affichage sur un écran large</figcaption>
+          <img class="result-screenshot wide" src="{{ asset('img/portfolio/responsive/responsive_wide_lowres.jpg') }}" alt="Capture d'écran de la page web sur un écran large">
+        </figure>
 
       </div>
 
-      <div id="resultScreenshotModal" class="modal">
+      <figure id="resultScreenshotModal" class="modal">
         <span class="close">&times;</span>
+        <figcaption id="caption"></figcaption>
         <img class="modal-content">
-        <div id="caption"></div>
-      </div>
+      </figure>
 
     </div>
   </div>
