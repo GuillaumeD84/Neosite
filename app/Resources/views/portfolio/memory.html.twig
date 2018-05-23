@@ -2,9 +2,18 @@
 
 {% block title %}Memory{% endblock %}
 
-{% block body %}
-  <h1>Le Memory</h1>
-  LIEN-VERS-GIT
+{% block stylesheets %}
+  <link rel="stylesheet" href="{{ asset('css/portfolio/slideshow.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/portfolio/modal.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/portfolio/memory.css') }}">
+{% endblock %}
+
+{% block main %}
+  <div id="portfolioTitle">
+    <h1>Le Memory</h1>
+    <a href="#" title="Consulter le code source sur GitHub" target="_blank">Dépôt GitHub</a>
+  </div>
+
   <p>
     Le langage JavaScript est un incontournable aujourd'hui dans nos site web ! Il s'agissait ici de reproduire le jeu du Memory de Ravensburger grâce à ce langage en s'aidant de la librarie <a href="https://jquery.com/" title="Visiter le site de jQuery" target="_blank">jQuery</a>.
     Le principe est simple : parmis plusieurs cartes placées face cachées, sélectionner en deux. Si elles sont identiques, la paire est validée, sinon ces deux cartes sont retournées face cachée. L'objectif étant de retrouver toute les paires, le tout avec une limite de temps (ici 60 secondes).
@@ -17,6 +26,66 @@
     <li>Réfléchir à un algorithme pour traduire un jeu de plateau en programme scripté</li>
   </ul>
 
+
   <h2>Résultat</h2>
-  IMAGES-DE-LEXERCICE
-{% endblock body %}
+  <div class="screenshotDiv">
+    <img id="screenshotHome" class="result-screenshot" src="{{ asset('img/portfolio/memory/memory_home.jpg') }}" alt="Capture d'écran du memory par défaut">
+  </div>
+
+  <p>Pendant une partie, le jeu vous autorise à choisir deux cartes. Si elles sont identiques vous pourrez continuer immédiatemment, sinon il vous faudra patienter 1 seconde avant qu'elles se replacent face cachée.</p>
+  <p>Le slide ci-dessous illustre un mauvais choix :</p>
+
+  <div id="resultImg" class="row">
+    <div class="col-12">
+
+      <!-- The dots/circles -->
+      <div id="slideshowNavigation">
+        <!-- Next and previous buttons -->
+        <div class="slideshowArrow">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        </div>
+        <div id="slideshowDots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="slideshowArrow">
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <figure class="mySlides">
+          <figcaption class="text">Avant la sélection de deux mauvaises cartes</figcaption>
+          <img class="result-screenshot small" src="{{ asset('img/portfolio/memory/memory_before.jpg') }}" alt="Capture d'écran de la page web sur un mobile">
+        </figure>
+
+        <figure class="mySlides">
+          <figcaption class="text">Mauvais choix</figcaption>
+          <img class="result-screenshot medium" src="{{ asset('img/portfolio/memory/memory_wrong.jpg') }}" alt="Capture d'écran de la page web sur une tablette">
+        </figure>
+
+        <figure class="mySlides">
+          <figcaption class="text">Après la sélection de deux mauvaises cartes</figcaption>
+          <img class="result-screenshot wide" src="{{ asset('img/portfolio/memory/memory_after.jpg') }}" alt="Capture d'écran de la page web sur un écran large">
+        </figure>
+
+      </div>
+
+      <figure id="resultScreenshotModal" class="modal">
+        <span class="close">&times;</span>
+        <figcaption id="caption"></figcaption>
+        <img class="modal-content">
+      </figure>
+
+    </div>
+  </div>
+
+  {% block javascripts %}
+    <script src="{{ asset('js/portfolio/slideshow.js') }}"></script>
+    <script src="{{ asset('js/portfolio/modal.js') }}"></script>
+  {% endblock %}
+{% endblock main %}

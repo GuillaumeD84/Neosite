@@ -12,7 +12,7 @@
     <h1>Les rich snippets</h1>
     <a href="https://github.com/GuillaumeD84/Challenge_S6-J5_SEO" title="Consulter le code source sur GitHub" target="_blank">Dépôt GitHub</a>
   </div>
-  
+
   <p>
     Avoir un site web beau et fonctionnel pour y proposer ses produits et ses services c'est bien, mais s'il n'est pas visible auprès du grand publique, l'argent et les efforts qui y ont été consacré pourrait savérer infructueux. Il est donc important de savoir améliorer la visibilité de son site dans les moteurs de recherche.
     Le sujet étant très vaste et complexe, nous nous étions penchés ce jour là sur un exercice visant à l'utilisation des métadonnées avec les microdatas/JSON-LD pour obtenir sur Google un produit "<a href="https://developers.google.com/search/docs/data-types/product" title="Documentation de Google concernant les rich snippets" target="_blank">Rich snippet</a>". Lors d'une recherche sur le moteur de Google, elles permettront d'enrichir les résultats sur nos produits de détails les concernants comme le prix, la disponibilité, la description ou encore la notation.
@@ -29,8 +29,10 @@
   <img id="screenshotHome" class="result-screenshot" src="{{ asset('img/portfolio/rich_snippets/rich-snippet_home.jpg') }}" alt="Capture d'écran de la page d'un produit">
 
   <p>Après y avoir inséré les microdata, <a href="https://search.google.com/structured-data/testing-tool" title="Consulter l'outil de test des données structurées de Google" target="_blank">l'outil de test de Google</a> nous permet de corriger les potentielles erreurs et d'avoir un aperçu de ce que donnerai notre produit dans les résultats d'une recherche</p>
-  <img id="screenshotTestingToolCode" class="result-screenshot" src="{{ asset('img/portfolio/rich_snippets/rich-snippet_testing-tool_code.jpg') }}" alt="Capture d'écran de l'outil de test de Google sur les microdata (code HTML)"><!--
-  --><img id="screenshotTestingToolResult" class="result-screenshot" src="{{ asset('img/portfolio/rich_snippets/rich-snippet_testing-tool_result.jpg') }}" alt="Capture d'écran de l'outil de test de Google sur les microdata (résultat)">
+  <div id="testingToolDiv">
+    <img id="screenshotTestingToolCode" class="result-screenshot" src="{{ asset('img/portfolio/rich_snippets/rich-snippet_testing-tool_code.jpg') }}" alt="Capture d'écran de l'outil de test de Google sur les microdata (code HTML)"><!--
+    --><img id="screenshotTestingToolResult" class="result-screenshot" src="{{ asset('img/portfolio/rich_snippets/rich-snippet_testing-tool_result.jpg') }}" alt="Capture d'écran de l'outil de test de Google sur les microdata (résultat)">
+  </div>
 
   <div id="resultPreviewDiv">
     <p>Et voici ce que donnerai notre produit dans les résultats d'une recherche</p>

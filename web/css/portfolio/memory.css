@@ -1,0 +1,42 @@
+/* Modal box adjustement */
+.modal-content {
+    max-width: 80%;
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-content {
+    max-width: 65%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modal-content {
+    max-width: 55%;
+  }
+}
+
+.result-screenshot {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 80%;
+    margin-bottom: 24px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.result-screenshot:hover {opacity: 0.7;}
+
+.screenshotDiv {
+  text-align: center;
+}
+
+.slideshow-container {
+  max-width: 100%;
+}
+.mySlides {
+  text-align: center;
+}
+
+figcaption.text {
+  margin-bottom: 6px;
+}
