@@ -1,0 +1,49 @@
+/* Modal box adjustement */
+.modal-content {
+    max-width: 80%;
+}
+
+/* Screenshots of the testing tool */
+#screenshotTestingToolCode,
+#screenshotTestingToolResult {
+  width: 45%;
+}
+
+.result-screenshot {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.result-screenshot:hover {opacity: 0.7;}
+
+/* Screenshot of the product preview */
+#screenshotTestingToolPreview {
+  max-width: 100%;
+}
+
+#resultPreviewDiv {
+  margin: auto;
+  text-align: center;
+}
+#resultPreviewDiv p {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  #resultPreviewDiv {
+    max-width: 75%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modal-content {
+    max-width: 55%;
+  }
+
+  #resultPreviewDiv {
+    max-width: 60%;
+  }
+}
