@@ -2,28 +2,89 @@
 
 {% block title %}FAQ-O-Clock{% endblock %}
 
-{% block body %}
-  <h1>La FAQ-O-Clock</h1>
-  LIEN-VERS-GIT
+{% block stylesheets %}
+  <link rel="stylesheet" href="{{ asset('css/portfolio/modal.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/portfolio/faqoclock.css') }}">
+{% endblock %}
+
+{% block main %}
+  <div id="portfolioTitle">
+    <h1>La FAQ-O-Clock</h1>
+    <a href="#" title="Consulter le code source sur GitHub" target="_blank">Dépôt GitHub</a>
+  </div>
+
   <p>
     Ce site web réalisé en une quarantaine d'heures est le résultat de trois semaines d'apprentissage sur le framework <a href="https://symfony.com/" title="Visiter le site de Symfony" target="_blank">Symfony</a>. Basé sur le modèle de Quora/StackOverflow, il s'agissait de coder une application de type questions/réponses.
   </p>
   <p>
-    Tous les utilisateurs peuvent consulter le contenu du site, mais ils doivent être inscrit pour pouvoir poser et répondre aux questions des autres utilisateurs. De plus, l'application dispose d'un système de vote "+1" pour les questions et réponses codé en <abbr title="Asynchronous JavaScript And XML">Ajax</abbr> ainsi que la possibilité d'associer aux questions une ou plusieurs catégories, ce qui permet aux utilisateurs de les filtrer d'après ces dernières. Les administrateurs ont quand à eux, accès à un <abbr title="create, read, update, and delete">CRUD</abbr> directement intégré à l'application afin de pouvoir administrer les questions et les réponses, mais également à la liste des utilisateurs, à la liste des rôles (utilisateur simple ou administrateur par exemple) ainsi qu'à la liste des catégories.
+    Tous les utilisateurs peuvent consulter le contenu du site, mais ils doivent être inscrit pour pouvoir poser et répondre aux questions des autres utilisateurs. De plus, l'application dispose d'un système de vote "+1" pour les questions et réponses (codé en <abbr title="Asynchronous JavaScript And XML">Ajax</abbr>) ainsi que la possibilité d'associer aux questions une ou plusieurs catégories, ce qui permet aux utilisateurs de les filtrer d'après ces dernières. Les administrateurs ont quand à eux, accès à un <abbr title="create, read, update, and delete">CRUD</abbr> directement intégré à l'application afin de pouvoir administrer les questions et les réponses, mais également à la liste des utilisateurs, à la liste des rôles (utilisateur simple ou administrateur par exemple) ainsi qu'à la liste des catégories.
   </p>
 
   <h2>Objectifs</h2>
   <ul>
     <li>Mettre en place une base de données relationnelle</li>
     <li>Permettre aux visiteurs de s'inscrire pour avoir accès aux fonctionnalités du site</li>
-    <li>Fournir une page de profil pour pouvoir éditer ses informations personnelles</li>
-    <li>Associer des rôles aux utilisateurs afin d'autoriser/restreindre l'accès à certaines parties du site (administratives par exemple)</li>
+    <li>Fournir une page de profil aux inscrits afin qu'ils puissent éditer leurs données personnelles</li>
+    <li>Associer des rôles aux utilisateurs afin d'autoriser/restreindre l'accès à certaines parties du site</li>
     <li>Utiliser les formulaires Symfony</li>
     <li>Ajouter des fixtures pour peupler la base de données</li>
-    <li>Utiliser AJAX pour les votes</li>
+    <li>Utiliser Ajax pour les votes</li>
     <li>Créer un service permettant de générer automatiquement le slug d'une catégorie</li>
   </ul>
 
   <h2>Résultat</h2>
-  IMAGES-DE-LEXERCICE
-{% endblock body %}
+  <p>Voici la page d'accueil telle qu'elle apparait aux visiteurs. La seule restriction comparée aux utilisateurs inscrit, est qu'ils sont uniquement autorisés à consulter les questions/réponses.</p>
+  <div class="screenshotDiv">
+    <figure>
+      <figcaption>Page d'accueil (visiteur)</figcaption>
+      <img id="screenshotHome" class="result-screenshot" src="{{ asset('img/portfolio/faqoclock/faqoclock_home.jpg') }}" alt="Capture d'écran de la page d'acceuil du site">
+    </figure>
+    <figure>
+      <figcaption>Page d'une question (visiteur)</figcaption>
+      <img id="screenshotQuestionAnon" class="result-screenshot" src="{{ asset('img/portfolio/faqoclock/faqoclock_question_visitor.jpg') }}" alt="Capture d'écran de la page d'acceuil du site">
+    </figure>
+  </div>
+
+  <p>Une fois le visiteur inscrit et connecté, il aura accès à un formulaire pour pouvoir poser une nouvelle question ainsi qu'à un second lui permettant de proposer une réponse à une question déjà existante.</p>
+  <div class="screenshotDiv">
+    <figure>
+      <figcaption>Formulaire de création d'une nouvelle question</figcaption>
+      <img id="screenshotQuestionNew" class="result-screenshot" src="{{ asset('img/portfolio/faqoclock/faqoclock_question_new.jpg') }}" alt="Capture d'écran de la page d'acceuil du site">
+    </figure>
+    <figure>
+      <figcaption>Page d'une question</figcaption>
+      <img id="screenshotQuestionLogged" class="result-screenshot" src="{{ asset('img/portfolio/faqoclock/faqoclock_question_logged.jpg') }}" alt="Capture d'écran de la page d'acceuil du site">
+    </figure>
+  </div>
+
+  <p>Une page de profil lui permet également de consulter et modifier ses données personnelles ainsi que d'accéder à la liste des questions/réponses qu'il aura proposées.</p>
+  <div class="screenshotDiv">
+    <figure>
+      <figcaption>Page de profil</figcaption>
+      <img id="screenshotProfile" class="result-screenshot" src="{{ asset('img/portfolio/faqoclock/faqoclock_profile.jpg') }}" alt="Capture d'écran de la page d'acceuil du site">
+    </figure>
+  </div>
+
+  <p>Comme dans la plupart des sites web, celui-ci intègre un système de rôle. Dans cette application il y a les visiteurs, les utilisateurs et les administrateurs. Ces derniers ont accès à un CRUD leur permettant d'administrer le contenu du site.</p>
+  <p>Ci-dessous la page listant les utilisateurs inscrits ainsi que le formulaire permettant d'éditer leurs données. Dans cet exercice ce dernier permet à un administrateur de modifier toutes les informations relatives à un utilisateur mais pour des raisons de sécurité on souhatera probablement éviter qu'un administrateur puisse avoir autant de droit en cas de vol/perte de ses identifiants, ce qui serait très dommageable entre de mauvaise mains.</p>
+  <div class="screenshotDiv">
+    <img id="screenshotQuestionNew" class="result-screenshot" src="{{ asset('img/portfolio/faqoclock/faqoclock_crud_user.jpg') }}" alt="Capture d'écran de la page d'acceuil du site">
+    <img id="screenshotQuestionDisplay" class="result-screenshot" src="{{ asset('img/portfolio/faqoclock/faqoclock_crud_user_edit.jpg') }}" alt="Capture d'écran de la page d'acceuil du site">
+  </div>
+
+  <div id="resultImg" class="row">
+    <div class="col-12">
+
+      <figure id="resultScreenshotModal" class="modal">
+        <span class="close">&times;</span>
+        <figcaption id="caption"></figcaption>
+        <img class="modal-content">
+      </figure>
+
+    </div>
+  </div>
+
+  {% block javascripts %}
+    <script src="{{ asset('js/portfolio/modal.js') }}"></script>
+  {% endblock %}
+{% endblock main %}
