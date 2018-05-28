@@ -1,14 +1,92 @@
-{% for project in projects %}
-  <div class="project" data-project-name="{{ project.name }}">
-    <h2>{{ project.name }}</h2>
-    <div class="categories">
-      {% for cat in project.cat %}
-        <span class="category">{{ cat|upper }}</span>
-      {% endfor %}
-    </div>
-    <img src="https://picsum.photos/30{{ loop.index0 }}/200/?random" alt="">
-    <p>{{ project.desc }}</p>
-    <button type="button" class="more-details" name="button">Plus de détails</button>
-    <span class="end"></span>
+<div class="project" data-project-name="responsive">
+  <h2>Un site responsive</h2>
+  <div class="categories">
+    <span class="category">HTML</span>
+    <span class="category">CSS</span>
+    <span class="category">RWD</span>
+    <span class="category">Bootstrap</span>
   </div>
-{% endfor %}
+  <img src="https://picsum.photos/300/200/?random" alt="Miniature du projet">
+  <p>Les supports de consultation étant de plus en plus variés (ordinateurs de bureau, tablettes, smartphone, télévision…), il est important d'offrir aux utilisateurs une interface adéquate peu importe ce dernier. C'est un exercice visant à adapter l'affichage des articles d'un blog via le framework CSS : Bootstrap.</p>
+  <button type="button" class="more-details" name="button">
+    <a href="{{ path('responsive') }}">Plus de détails</a>
+  </button>
+  <span class="end"></span>
+</div>
+
+<div class="project" data-project-name="rich-snippets">
+  <h2>Les rich snippets</h2>
+  <div class="categories">
+    <span class="category">HTML</span>
+    <span class="category">CSS</span>
+    <span class="category">SEO</span>
+  </div>
+  <img src="https://picsum.photos/301/200/?random" alt="Miniature du projet">
+  <p>Utilisation des métadonnées avec les microdatas pour obtenir sur Google un produit "Rich snippet" pour améliorer son référencement dans les moteurs de recherche.</p>
+  <button type="button" class="more-details" name="button">
+    <a href="{{ path('rich_snippets') }}">Plus de détails</a>
+  </button>
+  <span class="end"></span>
+</div>
+
+<div class="project" data-project-name="memory">
+  <h2>Le Memory en JS</h2>
+  <div class="categories">
+    <span class="category">HTML</span>
+    <span class="category">CSS</span>
+    <span class="category">JavaScript</span>
+    <span class="category">jQuery</span>
+  </div>
+  <img src="https://picsum.photos/302/200/?random" alt="Miniature du projet">
+  <p>Le célèbre jeu Memory de Ravensburger écrit en JS avec les librairies jQuery et jQuery UI.</p>
+  <button type="button" class="more-details" name="button">
+    <a href="{{ path('memory') }}">Plus de détails</a>
+  </button>
+  <span class="end"></span>
+</div>
+
+<div class="project" data-project-name="todolist">
+  <h2>Une todo list</h2>
+  <div class="categories">
+    <span class="category">HTML</span>
+    <span class="category">CSS</span>
+    <span class="category">PHP</span>
+  </div>
+  <img src="https://picsum.photos/303/200/?random" alt="Miniature du projet">
+  <p>Cette todo list écrite en PHP exploite les superglobales $_GET et $_POST et l'utilisation des sessions pour gérer et stocker les tâches.</p>
+  <button type="button" class="more-details" name="button">
+    <a href="{{ path('todolist') }}">Plus de détails</a>
+  </button>
+  <span class="end"></span>
+</div>
+
+<div class="project" data-project-name="faqoclock">
+  <h2>Un site de questions/réponses avec Symfony</h2>
+  <div class="categories">
+    <span class="category">Symfony</span>
+    <span class="category">SQL</span>
+  </div>
+  <img src="https://picsum.photos/304/200/?random" alt="Miniature du projet">
+  <p>Réalisation d'un site basé sur le modèle de Quora/StackOverflow avec Symfony en une quarantaine d'heures.</p>
+  <button type="button" class="more-details" name="button">
+    <a href="{{ path('faqoclock') }}">Plus de détails</a>
+  </button>
+  <span class="end"></span>
+</div>
+
+<div class="project" data-project-name="projetz">
+  <h2>Projet Z</h2>
+  <div class="categories">
+    <span class="category">Symfony</span>
+    <span class="category">Node.js</span>
+    <span class="category">Socket.IO</span>
+    <span class="category">Redis</span>
+    <span class="category">Phaser</span>
+  </div>
+  <img src="https://picsum.photos/305/200/?random" alt="Miniature du projet">
+  <p>Mon plus gros projet réalisé avec une équipe. L'objectif fut de créer un site web grâce au framework Symfony, qui permettrait aux utilisateurs d'accéder à un jeu vidéo multijoueur développé à l'aide du framework HTML5 : Phaser, le tout en les connectants entre eux via les technologies Node.js et Socket.IO.</p>
+  <button type="button" class="more-details" name="button">
+    <a href="{{ path('projetz') }}">Plus de détails</a>
+  </button>
+  <span class="end"></span>
+</div>

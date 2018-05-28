@@ -21,21 +21,12 @@ class PortfolioController extends Controller
     }
 
     /**
-     * @Route("/rich-snippet", name="rich_snippet")
+     * @Route("/rich-snippet", name="rich_snippets")
      * @Method({"GET"})
      */
     public function richSnippetAction()
     {
         return $this->render('portfolio/rich_snippet.html.twig');
-    }
-
-    /**
-     * @Route("/todolist", name="todolist")
-     * @Method({"GET"})
-     */
-    public function todolistAction()
-    {
-        return $this->render('portfolio/todolist.html.twig');
     }
 
     /**
@@ -45,6 +36,15 @@ class PortfolioController extends Controller
     public function memoryAction()
     {
         return $this->render('portfolio/memory.html.twig');
+    }
+    
+    /**
+    * @Route("/todolist", name="todolist")
+    * @Method({"GET"})
+    */
+    public function todolistAction()
+    {
+        return $this->render('portfolio/todolist.html.twig');
     }
 
     /**
