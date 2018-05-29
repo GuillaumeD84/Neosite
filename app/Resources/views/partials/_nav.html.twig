@@ -1,7 +1,7 @@
 <aside id="nav" class="col-12 col-md-4 col-xl-3">
     <div id="nav-top">
         <a href="{{ path('homepage') }}">
-            <img id="profilPic" src="{{ asset('img/default-profil.jpg') }}" alt="photo de profil de guillaume durand">
+            <img id="profilPic" src="{{ asset('img/profil_2.jpg') }}" alt="photo de profil de guillaume durand">
         </a>
         <h1 id="name">Guillaume DURAND</h1>
         <h2 id="title">Développeur Web</h2>
@@ -33,13 +33,10 @@
                     <a class="nav-link {{ app.request.get('_route') == 'portfolio' ? 'active-page' }}" href="{{ path('portfolio') }}">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ app.request.get('_route') == 'aboutme' ? 'active-page' }}" href="{{ path('aboutme') }}">A propos de moi</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link {{ app.request.get('_route') == 'contact' ? 'active-page' }}" href="{{ path('contact') }}">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ app.request.get('_route') == 'curriculum' ? 'active-page' }}" href="{{ path('curriculum') }}">Obtenir mon CV</a>
+                    <a class="nav-link {{ app.request.get('_route') == 'cv' ? 'active-page' }}" href="{{ path('cv') }}">Obtenir mon CV</a>
                 </li>
             </ul>
         </div>
@@ -57,13 +54,10 @@
                 <a class="{{ app.request.get('_route') == 'portfolio' ? 'active-page' }}" href="{{ path('portfolio') }}">Portfolio</a>
             </li>
             <li>
-                <a class="{{ app.request.get('_route') == 'aboutme' ? 'active-page' }}" href="{{ path('aboutme') }}">A propos de moi</a>
-            </li>
-            <li>
                 <a class="{{ app.request.get('_route') == 'contact' ? 'active-page' }}" href="{{ path('contact') }}">Contact</a>
             </li>
             <li>
-                <a class="{{ app.request.get('_route') == 'curriculum' ? 'active-page' }}" href="{{ path('curriculum') }}" target="_blank">Obtenir mon CV</a>
+                <a class="{{ app.request.get('_route') == 'cv' ? 'active-page' }}" href="{{ path('cv') }}" target="_blank">Obtenir mon CV</a>
             </li>
         </ul>
     </div>

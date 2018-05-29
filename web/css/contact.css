@@ -1,0 +1,22 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.email {
+  margin-bottom: 12px;
+}
+
+.availability {
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+.yes {
+  /* color: white; */
+  background-color: limegreen;
+}
+.no {
+  color: white;
+  background-color: crimson;
+}

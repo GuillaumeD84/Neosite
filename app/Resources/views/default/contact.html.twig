@@ -2,12 +2,30 @@
 
 {% block title %}Contact{% endblock %}
 
+{% block stylesheets %}
+  <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+{% endblock %}
+
 {% block main %}
-  <h1>Comment me contacter ?</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur id possimus, consequuntur ipsam, nesciunt doloremque esse dolores aliquid ea tempore, corporis incidunt eum ab magni. Soluta totam fugiat deleniti minus.</p>
-  <ul>
-    <li>email</li>
-    <li>twitter</li>
-    <li>linkedin</li>
-  </ul>
+  <h1>Me contacter</h1>
+  <p>N'hésitez pas à me contacter si vous avez la moindre question.</p>
+  <p>Je suis actuellement <span class="availability yes">disponible</span> pour toute proposition d'emploi.</p>
+  <div class="row">
+    <div class="col-4 col-md-3">
+      <ul id="captions">
+        <li class="caption email"><span class="fas fa-envelope-square"></span> Email</li>
+        <li class="caption twitter"><span class="fab fa-twitter-square"></span> Twitter</li>
+        <li class="caption linkedin"><span class="fab fa-linkedin"></span> LinkedIn</li>
+        <li class="caption github"><span class="fab fa-github-square"></span> GitHub</li>
+      </ul>
+    </div>
+    <div class="col-8 col-md-9">
+      <ul id="links">
+        <li class="link email"><a href="mailto:guillaume.durand@outlook.fr">guillaume.durand@outlook.fr</a></li>
+        <li class="link twitter"><a href="https://twitter.com/GuillaumeDur84">@GuillaumeDur84</a></li>
+        <li class="link linkedin"><a href="https://www.linkedin.com/in/guillaume-durand-367258161/">guillaume-durand-367258161</a></li>
+        <li class="link github"><a href="https://github.com/GuillaumeD84">GuillaumeD84</a></li>
+      </ul>
+    </div>
+  </div>
 {% endblock main %}

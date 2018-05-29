@@ -53,3 +53,7 @@ main > h1 {
 button.more-details {
   margin-bottom: 8px;
 }
+
+.project-thumb {
+  max-width: 40%;
+}

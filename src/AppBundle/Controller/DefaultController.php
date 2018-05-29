@@ -54,17 +54,6 @@ class DefaultController extends Controller
     }
 
     /**
-     * A very short description of me
-     *
-     * @Route("/aboutme", name="aboutme")
-     * @Method({"GET"})
-     */
-    public function aboutmeAction()
-    {
-        return $this->render('default/aboutme.html.twig');
-    }
-
-    /**
      * Contact links
      *
      * @Route("/contact", name="contact")
@@ -78,10 +67,10 @@ class DefaultController extends Controller
     /**
      * Display my CV
      *
-     * @Route("/curriculum", name="curriculum")
+     * @Route("/cv", name="cv")
      * @Method({"GET"})
      */
-    public function curriculumAction()
+    public function cvAction()
     {
       $pdfPath = 'downloads/sample.pdf';
 
