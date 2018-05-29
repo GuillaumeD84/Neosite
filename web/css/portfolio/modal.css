@@ -17,8 +17,22 @@
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+}
+
+#resultScreenshotModal img {
+  max-width: 90%;
+}
+
+@media screen and (min-width: 1024px) {
+  #resultScreenshotModal img {
+    max-width: 70%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #resultScreenshotModal img {
+    max-width: 60%;
+  }
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */

@@ -3,13 +3,31 @@ main > h1 {
 }
 
 .project {
-    margin-bottom: 2em;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     text-align: center;
+    max-width: 90%;
+    margin: auto;
 }
 .project .end {
+    margin-bottom: 2em;
     display: block;
     clear: both;
+}
+
+#mainParagraph {
+  text-align: center;
+}
+.project .project-desc {
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  #mainParagraph {
+    text-align: left;
+  }
+  .project .project-desc {
+    text-align: left;
+  }
 }
 
 .project img {
@@ -17,10 +35,6 @@ main > h1 {
     margin: auto;
     margin-top: 6px;
     margin-bottom: 6px;
-}
-
-.project p {
-    text-align: left;
 }
 
 .project .categories {
@@ -56,4 +70,6 @@ button.more-details {
 
 .project-thumb {
   max-width: 40%;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }

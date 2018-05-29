@@ -8,6 +8,6 @@
 
 {% block main %}
     <h1>Portfolio</h1>
-    <p>Cette page est destinée à vous présenter des exercices réalisés pendant ma formation sur différents langages, technologies et principes comme le web adaptatif, ainsi que le projet concluant cinq mois d'apprentissage réalisé avec une équipe de trois personnes intitulé : <a href="{{ path('projetz') }}" title="Consulter la page détaillant le projet Projet Z">Projet Z</a>. Vous pouvez accéder pour chacun d'entre eux à une page détaillée ainsi qu'un lien vers leur repo GitHub respectif pour pouvoir consulter le code source.</p>
+    <p id="mainParagraph">Cette page est destinée à vous présenter des exercices réalisés pendant ma formation sur différents langages, technologies et principes comme le web adaptatif ou  le référencement naturel, ainsi que le projet concluant les cinq mois de formation réalisé avec une équipe de trois personnes intitulé : <a href="{{ path('projetz') }}" title="Consulter la page détaillant le projet Projet Z">Projet Z</a>. Vous pouvez accéder pour chacun d'entre eux accéder à une page détaillée ainsi qu'un lien vers leur repo GitHub respectif pour pouvoir consulter le code source.</p>
     {% include 'partials/_portfolio.html.twig' %}
 {% endblock main %}

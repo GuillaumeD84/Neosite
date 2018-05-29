@@ -2,10 +2,10 @@ aside#nav a {
     text-decoration: none;
 }
 
-aside#nav .navbar-brand i,
+aside#nav .navbar-brand,
 aside#nav .navbar-toggler-icon {
     color: rgba(240, 240, 240, 1);
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 body {
@@ -89,6 +89,9 @@ ul.social-links,
     display: inline;
     font-size: 1.4em;
 }
+.social-links li i {
+  color: rgba(255, 60, 60, 1);
+}
 
 .navbar-brand img {
     height: 30px;
@@ -113,7 +116,8 @@ nav .navbar-toggler-icon {
 }
 
 #nav .nav-link {
-    color: blanchedalmond;
+    /* color: blanchedalmond; */
+    color: whitesmoke;
 }
 
 aside #navLinks {

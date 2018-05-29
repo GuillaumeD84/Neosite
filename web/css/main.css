@@ -5,6 +5,7 @@ body {
 
 main {
     background-color: rgb(250, 250, 250);
+    padding-bottom: 24px;
 }
 
 /* Scrollbar */
@@ -33,16 +34,16 @@ h1 {
 }
 
 /* Links */
-a {
+a:not(.social-link) {
   color: rgba(31, 69, 173, 1);
 }
-a:visited {
+a:visited:not(.social-link) {
   color: rgba(98, 0, 179, 1);
 }
-a:hover {
+a:hover:not(.social-link) {
   color: rgba(33, 123, 255, 1);
 }
-a:active {
+a:active:not(.social-link) {
   color: rgba(98, 0, 179, 1);
 }
 
@@ -51,13 +52,13 @@ h1 a, h2 a, h3 a, h4 a {
   text-shadow: 1px 1px 0px rgba(238, 238, 238, .4), 2px 2px 0px rgba(112, 112, 112, .4);
 }
 h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited {
-  color: rgba(31, 69, 173, 1);
+  color: rgba(31, 69, 120, 1);
   text-shadow: 1px 1px 0px rgba(238, 238, 238, .4), 2px 2px 0px rgba(112, 112, 112, .4);
 }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
   text-decoration: none;
-  color: rgba(33, 123, 255, 1);
-  text-shadow: 1px 1px 0px rgba(238, 238, 238, .6), 2px 2px 0px rgba(112, 112, 112, .8);
+  color: rgba(33, 100, 200, 1);
+  text-shadow: 1px 1px 0px rgba(238, 238, 238, .5), 2px 2px 0px rgba(112, 112, 112, .7);
 }
 h1 a:active, h2 a:active, h3 a:active, h4 a:active {
   text-decoration: none;
