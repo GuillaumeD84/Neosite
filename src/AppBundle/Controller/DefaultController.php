@@ -64,16 +64,16 @@ class DefaultController extends Controller
         return $this->render('default/contact.html.twig');
     }
 
-    /**
-     * Display my CV
-     *
-     * @Route("/cv", name="cv")
-     * @Method({"GET"})
-     */
-    public function cvAction()
-    {
-      $pdfPath = 'downloads/sample.pdf';
-
-      return $this->file($pdfPath, 'guillaume_durand_cv.pdf', ResponseHeaderBag::DISPOSITION_INLINE);
-    }
+    // /**
+    //  * Display my CV
+    //  *
+    //  * @Route("/cv", name="cv")
+    //  * @Method({"GET"})
+    //  */
+    // public function cvAction()
+    // {
+    //   $pdfPath = 'downloads/sample.pdf';
+    //
+    //   return $this->file($pdfPath, 'guillaume_durand_cv.pdf', ResponseHeaderBag::DISPOSITION_INLINE);
+    // }
 }

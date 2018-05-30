@@ -28,14 +28,14 @@
                     <a class="nav-link {{ app.request.get('_route') == 'formation' ? 'active-page' }}" href="{{ path('formation') }}">Ma formation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ app.request.get('_route') == 'portfolio' ? 'active-page' }}" href="{{ path('portfolio') }}">Portfolio</a>
+                    <a class="nav-link {{ 'portfolio' in app.request.get('_route') ? 'active-page' }}" href="{{ path('portfolio') }}">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ app.request.get('_route') == 'contact' ? 'active-page' }}" href="{{ path('contact') }}">Contact</a>
                 </li>
-                <li class="nav-item">
+                {# <li class="nav-item">
                     <a class="nav-link {{ app.request.get('_route') == 'cv' ? 'active-page' }}" href="{{ path('cv') }}">Obtenir mon CV</a>
-                </li>
+                </li> #}
             </ul>
         </div>
     </nav>
@@ -49,14 +49,14 @@
                 <a class="{{ app.request.get('_route') == 'formation' ? 'active-page' }}" href="{{ path('formation') }}">Ma formation</a>
             </li>
             <li>
-                <a class="{{ app.request.get('_route') == 'portfolio' ? 'active-page' }}" href="{{ path('portfolio') }}">Portfolio</a>
+                <a class="{{ 'portfolio' in app.request.get('_route') ? 'active-page' }}" href="{{ path('portfolio') }}">Portfolio</a>
             </li>
             <li>
                 <a class="{{ app.request.get('_route') == 'contact' ? 'active-page' }}" href="{{ path('contact') }}">Contact</a>
             </li>
-            <li>
+            {# <li>
                 <a class="{{ app.request.get('_route') == 'cv' ? 'active-page' }}" href="{{ path('cv') }}" target="_blank">Obtenir mon CV</a>
-            </li>
+            </li> #}
         </ul>
     </div>
 </aside>

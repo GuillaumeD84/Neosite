@@ -22,9 +22,6 @@ main > h1 {
 }
 
 @media screen and (min-width: 1024px) {
-  #mainParagraph {
-    text-align: left;
-  }
   .project .project-desc {
     text-align: left;
     margin-bottom: 0;
@@ -60,6 +57,16 @@ main > h1 {
     height: 90%;
     border-radius: 5px;
     box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+@media screen and (min-width: 768px) {
+  main > h1 {
+      text-align: left;
+  }
+
+  #mainParagraph {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1024px) {

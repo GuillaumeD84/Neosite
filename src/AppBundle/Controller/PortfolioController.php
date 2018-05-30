@@ -12,7 +12,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class PortfolioController extends Controller
 {
     /**
-     * @Route("/responsive", name="responsive")
+     * @Route("/responsive", name="portfolio_responsive")
      * @Method({"GET"})
      */
     public function responsiveAction()
@@ -21,7 +21,7 @@ class PortfolioController extends Controller
     }
 
     /**
-     * @Route("/rich-snippet", name="rich_snippets")
+     * @Route("/rich-snippet", name="portfolio_rich_snippets")
      * @Method({"GET"})
      */
     public function richSnippetAction()
@@ -30,16 +30,16 @@ class PortfolioController extends Controller
     }
 
     /**
-     * @Route("/memory", name="memory")
+     * @Route("/memory", name="portfolio_memory")
      * @Method({"GET"})
      */
     public function memoryAction()
     {
         return $this->render('portfolio/memory.html.twig');
     }
-    
+
     /**
-    * @Route("/todolist", name="todolist")
+    * @Route("/todolist", name="portfolio_todolist")
     * @Method({"GET"})
     */
     public function todolistAction()
@@ -48,7 +48,7 @@ class PortfolioController extends Controller
     }
 
     /**
-     * @Route("/faqoclock", name="faqoclock")
+     * @Route("/faqoclock", name="portfolio_faqoclock")
      * @Method({"GET"})
      */
     public function faqoclockAction()
@@ -57,7 +57,7 @@ class PortfolioController extends Controller
     }
 
     /**
-     * @Route("/projetz", name="projetz")
+     * @Route("/projetz", name="portfolio_projetz")
      * @Method({"GET"})
      */
     public function projetzAction()

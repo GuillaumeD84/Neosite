@@ -2,11 +2,17 @@ aside#nav a {
     text-decoration: none;
     color: white;
 }
+aside#nav a:hover {
+  text-shadow: 2px 2px rgba(120, 40, 40, 1);
+}
 
 aside#nav a.active-page {
   color: rgba(255, 45, 45, 1);
   font-weight: bold;
   text-shadow: 1px 1px black;
+}
+aside#nav a.active-page:hover {
+  text-shadow: 2px 2px rgba(44, 44, 44, 1);
 }
 
 aside#nav .navbar-brand,
@@ -84,6 +90,10 @@ aside #profilPic {
     border-radius: 50%;
 }
 
+aside #profilPic:hover {
+  box-shadow: 0 0 20px rgba(120, 40, 40, 1), 0 0 20px rgba(120, 40, 40, 1);
+}
+
 ul.social-links,
 #navExtendable ul,
 #navLinks ul {
@@ -98,6 +108,9 @@ ul.social-links,
 }
 .social-links li i {
   color: rgba(255, 60, 60, 1);
+}
+.social-links li i:hover {
+  text-shadow: 2px 2px rgba(60, 60, 60, 1);
 }
 
 .navbar-brand img {
