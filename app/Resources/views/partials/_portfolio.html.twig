@@ -1,4 +1,4 @@
-<div class="project" data-project-name="projetz">
+<div id="portfolioProjetZ" class="project" data-project-name="projetz">
   <h2><a href="{{ path('portfolio_projetz') }}">Projet Z</a></h2>
   <div class="categories">
     <span class="category">Symfony</span>
@@ -9,12 +9,15 @@
   </div>
   <div class="project-details">
     <img class="project-thumb" src="{{ asset('img/portfolio/thumbnails/thumb_projetz.jpg') }}" alt="Miniature du projet">
-    <p class="project-desc">Mon plus gros projet réalisé avec une petite équipe. L'objectif fut de créer un site web grâce au framework Symfony, qui permettrait aux utilisateurs d'accéder à un jeu vidéo multijoueur développé à l'aide du framework HTML5 : <a href="https://phaser.io/" title="Visiter le site de Phaser" target="_blank">Phaser</a>, le tout en les connectants entre eux via les technologies <a href="https://nodejs.org/en/" title="Visiter le site de Node.js" target="_blank">Node.js</a> et <a href="https://socket.io/" title="Visiter le site de Socket.IO" target="_blank">Socket.IO</a>.</p>
+    <div class="project-desc-div">
+      <p class="project-desc">Mon plus gros projet réalisé avec une petite équipe. L'objectif fut de créer un site web grâce au framework Symfony, qui permettrait aux utilisateurs d'accéder à un jeu vidéo multijoueur développé à l'aide du framework HTML5 : <a href="https://phaser.io/" title="Visiter le site de Phaser" target="_blank">Phaser</a>, le tout en les connectants entre eux via les technologies <a href="https://nodejs.org/en/" title="Visiter le site de Node.js" target="_blank">Node.js</a> et <a href="https://socket.io/" title="Visiter le site de Socket.IO" target="_blank">Socket.IO</a>.</p>
+      <button class="more-details" type="button" name="button"><a href="{{ path('portfolio_projetz') }}">Plus de détails</a></button>
+    </div>
   </div>
   <span class="end"></span>
 </div>
 
-<div class="project" data-project-name="faqoclock">
+<div id="portfolioFaqoclock" class="project" data-project-name="faqoclock">
   <h2><a href="{{ path('portfolio_faqoclock') }}">Un site de type questions/réponses avec Symfony</a></h2>
   <div class="categories">
     <span class="category">Symfony</span>
@@ -24,12 +27,15 @@
   </div>
   <div class="project-details">
     <img class="project-thumb" src="{{ asset('img/portfolio/thumbnails/thumb_faqoclock.jpg') }}" alt="Miniature du projet">
-    <p class="project-desc">Réalisation d'un site basé sur le modèle de <a href="https://fr.quora.com/" title="Visiter le site Quora" target="_blank">Quora</a>/<a href="https://stackoverflow.com/" title="Visiter le site StackOverflow" target="_blank">StackOverflow</a> avec Symfony en une quarantaine d'heures.</p>
+    <div class="project-desc-div">
+      <p class="project-desc">Réalisation d'un site basé sur le modèle de <a href="https://fr.quora.com/" title="Visiter le site Quora" target="_blank">Quora</a>/<a href="https://stackoverflow.com/" title="Visiter le site StackOverflow" target="_blank">StackOverflow</a> avec Symfony en une quarantaine d'heures.</p>
+      <button class="more-details" type="button" name="button"><a href="{{ path('portfolio_faqoclock') }}">Plus de détails</a></button>
+    </div>
   </div>
   <span class="end"></span>
 </div>
 
-<div class="project" data-project-name="responsive">
+<div id="portfolioResponsive" class="project" data-project-name="responsive">
   <h2><a href="{{ path('portfolio_responsive') }}">Un site web adaptatif</a></h2>
   <div class="categories">
     <span class="category">HTML</span>
@@ -39,12 +45,15 @@
   </div>
   <div class="project-details">
     <img class="project-thumb" src="{{ asset('img/portfolio/thumbnails/thumb_responsive.jpg') }}" alt="Miniature du projet">
-    <p class="project-desc">Les supports de consultation étant de plus en plus variés (ordinateurs de bureau, tablettes, smartphone, télévision…), il est important d'offrir aux utilisateurs une interface adéquate peu importe ce dernier. C'était un exercice visant à adapter l'affichage des articles d'un blog via le framework CSS : <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
+    <div class="project-desc-div">
+      <p class="project-desc">Les supports de consultation étant de plus en plus variés (ordinateurs de bureau, tablettes, smartphone, télévision…), il est important d'offrir aux utilisateurs une interface adéquate peu importe ce dernier. C'était un exercice visant à adapter l'affichage des articles d'un blog via le framework CSS : <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
+      <button class="more-details" type="button" name="button"><a href="{{ path('portfolio_responsive') }}">Plus de détails</a></button>
+    </div>
   </div>
   <span class="end"></span>
 </div>
 
-<div class="project" data-project-name="rich-snippets">
+<div id="portfolioRichSnippets" class="project" data-project-name="rich-snippets">
   <h2><a href="{{ path('portfolio_rich_snippets') }}">Les rich snippets</a></h2>
   <div class="categories">
     <span class="category">HTML</span>
@@ -54,12 +63,15 @@
   </div>
   <div class="project-details">
     <img class="project-thumb" src="{{ asset('img/portfolio/thumbnails/thumb_rich-snippets.jpg') }}" alt="Miniature du projet">
-    <p class="project-desc">Petite exercice sur l'utilisation des métadonnées avec les microdata/JSON-LD pour obtenir sur Google un produit "Rich snippet" afin d'améliorer son rendu dans les moteurs de recherche.</p>
+    <div class="project-desc-div">
+      <p class="project-desc">Petite exercice sur l'utilisation des métadonnées avec les microdata/JSON-LD pour obtenir sur Google un produit "Rich snippet" afin d'améliorer son rendu dans les moteurs de recherche.</p>
+      <button class="more-details" type="button" name="button"><a href="{{ path('portfolio_rich_snippets') }}">Plus de détails</a></button>
+    </div>
   </div>
   <span class="end"></span>
 </div>
 
-<div class="project" data-project-name="memory">
+<div id="portfolioMemory" class="project" data-project-name="memory">
   <h2><a href="{{ path('portfolio_memory') }}">Le Memory en JS</a></h2>
   <div class="categories">
     <span class="category">HTML</span>
@@ -69,12 +81,15 @@
   </div>
   <div class="project-details">
     <img class="project-thumb" src="{{ asset('img/portfolio/thumbnails/thumb_memory.jpg') }}" alt="Miniature du projet">
-    <p class="project-desc">Le célèbre jeu Memory de Ravensburger écrit en JS avec les librairies jQuery et jQuery UI.</p>
+    <div class="project-desc-div">
+      <p class="project-desc">Le célèbre jeu Memory de Ravensburger écrit en JS avec les librairies jQuery et jQuery UI.</p>
+      <button class="more-details" type="button" name="button"><a href="{{ path('portfolio_memory') }}">Plus de détails</a></button>
+    </div>
   </div>
   <span class="end"></span>
 </div>
 
-<div class="project" data-project-name="todolist">
+<div id="portfolioTodolist" class="project" data-project-name="todolist">
   <h2><a href="{{ path('portfolio_todolist') }}">Une todo list</a></h2>
   <div class="categories">
     <span class="category">HTML</span>
@@ -83,7 +98,10 @@
   </div>
   <div class="project-details">
     <img class="project-thumb" src="{{ asset('img/portfolio/thumbnails/thumb_todolist.jpg') }}" alt="Miniature du projet">
-    <p class="project-desc">Cette todo list écrite en PHP exploite les superglobales $_GET et $_POST et l'utilisation des sessions pour gérer et stocker une liste de tâches.</p>
+    <div class="project-desc-div">
+      <p class="project-desc">Cette todo list écrite en PHP exploite les superglobales $_GET et $_POST et l'utilisation des sessions pour gérer et stocker une liste de tâches.</p>
+      <button class="more-details" type="button" name="button"><a href="{{ path('portfolio_todolist') }}">Plus de détails</a></button>
+    </div>
   </div>
   <span class="end"></span>
 </div>
