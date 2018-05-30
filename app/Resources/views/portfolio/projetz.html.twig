@@ -20,8 +20,8 @@
     Le principe de ce site est simple : en prenant comme support <a href="https://symfony.com/" title="Visiter le site de Symfony" target="_blank">Symfony</a>, réaliser une application qui permet de mettre en relation plusieurs utilisateurs à travers un jeu vidéo. Ce dernier devra utiliser des technologies permettant une communication en temps réel.
   </p>
   <p>
-    Sortant d'un mois d'apprentissage sur Symfony 3 nous n'avions pas eu de mal à mettre en place le côté "site" de l'application (page d'accueil, inscription, connexion, FAQ, etc...) grâce à ce que nous avions acquis, mais la difficulté concernait plutôt le jeu et la communication en temps réelle car, hormis pour le langage JavaScript, nous avions peu, voir aucunes connaissances dans ce domaine.
-    C'est donc après plusieurs jours de recherche que nous sommes parti sur les technologies JavaScript suivantes :
+    Sortant d'un mois d'apprentissage sur Symfony 3 nous n'avions pas eu de mal à mettre en place le côté "site" de l'application (page d'accueil, inscription, connexion, FAQ, etc...) grâce à ce que nous avions acquis, mais la difficulté concernait plutôt le jeu et la communication en temps réel, car hormis pour le langage JavaScript, nous avions peu, voir aucune connaissance dans ce domaine.
+    C'est donc après plusieurs jours de recherche que nous sommes partis sur les technologies JavaScript suivantes :
     <ul>
       <li><a href="https://phaser.io/" title="Visiter le site de Phaser" target="_blank">Phaser</a> (un framework de jeu en HTML5)</li>
       <li><a href="https://socket.io/" title="Visiter le site de Socket.IO" target="_blank">Socket.IO</a> (pour la communication client/serveur)</li>
@@ -29,16 +29,16 @@
     </ul>
   </p>
   <p>
-    Tel un réel projet en entreprise, il a fallu nous organiser pour respecter le délai imposé. Nous avions donc décider d'adopter une méthode agile pour la réalisation de ce dernier. Un support de type Kanban nous a permis de lister les tâches concernant l'application et de décider des objectifs hebdomadaire de la semaine, une communication quotidienne fut très bénéfique à l'équipe pour suivre l'avancement et repérer les tâches posant problème, une version opérationnelle de l'application était livré chaque semaine et nous ajustions régulièrement les objectifs à atteindre d'après les retours du client (ici représenté par les formateurs).
+    Tel un réel projet en entreprise, il a fallu nous organiser pour respecter le délai imposé. Nous avions donc décidé d'adopter une méthode agile pour la réalisation de ce dernier. Un support de type Kanban nous a permis de lister les tâches concernant l'application et de décider des objectifs hebdomadaires de la semaine, une communication quotidienne fut très bénéfique à l'équipe pour suivre l'avancement et repérer les tâches posant problème, une version opérationnelle de l'application était livrée chaque semaine et nous ajustions régulièrement les objectifs à atteindre d'après les retours du client (ici représenté par les formateurs).
   </p>
 
   <h2>Règles du jeu</h2>
   <p>
-    La partie oppose deux équipes de trois joueurs réparties dans deux factions : les zombies et les saints. Afin de décrocher la victoire, il faudra atteindre avant vos adversaire un score de 300 points obtenable en capturant les zones (au nombre de 4) de la carte.
-    Pour y parvenir, il vous suffit de rester à proximité celle-ci et de patienter quelques secondes, mais attention, si deux joueurs ennemis se trouvent au même endroit, la capture sera mis en pause et il faudra vous débarrasser de votre adversaire afin de pouvoir vous emparer de la zone.
-    De plus, il est tout à fait possible de capturer une zone contrôlée par l'équipe adversaire, cependant cela prendra plus de temps car il vous faudra tout d'abord annuler l'appartenance de la zone concernée à vos ennemi pour pouvoir ensuite être capable de vous en emparer.
+    La partie oppose deux équipes de trois joueurs : les zombies et les saints. Afin de décrocher la victoire, il faudra atteindre avant vos adversaires un score de 300 points obtenables en capturant les zones (au nombre de 4) de la carte.
+    Pour y parvenir, il vous suffit de rester à proximité celle-ci et de patienter quelques secondes, mais attention, si deux joueurs ennemis se trouvent au même endroit, la capture sera mise en pause et il faudra vous débarrasser de votre adversaire afin de pouvoir vous emparer de la zone.
+    De plus, il est tout à fait possible de capturer une zone contrôlée par l'équipe adversaire, cependant cela prendra plus de temps, car il vous faudra tout d'abord annuler l'appartenance de la zone concernée à vos ennemis pour pouvoir ensuite être capable de vous en emparer.
   </p>
-  <p>Pour abattre vos opposant vous disposez d'une attaque à l'épée dont les dégâts dépendent de votre statistique d'attaque et de la défense de votre ennemi. Par ailleurs, à chaque fois que vous mettrez à terre un adversaire vous obtiendrez des pièces d'or dépensables chez le marchand dans des potions de soins et des armes et armures vous permettant d'infliger plus de dégâts et d'en subir moins. Néanmoins tuer par un adversaire ne signifiera pas pour autant qu'il sera incapable de continuer la partie. Il ne pourra tout simplement plus y participer pendant quelques secondes, ce qui donnera un avantage numérique à votre équipe, mais passé ce délai il réaparaitra chez lui.</p>
+  <p>Pour abattre vos opposant vous disposez d'une attaque à l'épée dont les dégâts dépendent de votre statistique d'attaque et de la défense de votre ennemi. Par ailleurs, à chaque fois que vous mettrez à terre un adversaire vous obtiendrez des pièces d'or dépensables chez le marchand dans des potions de soins et des armes et armures vous permettant d'infliger plus de dégâts et d'en subir moins. Néanmoins, tuer par un adversaire ne signifiera pas pour autant qu'il sera incapable de continuer la partie. Il ne pourra tout simplement plus y participer pendant quelques secondes, ce qui donnera un avantage numérique à votre équipe, mais passé ce délai il réapparaitra chez lui.</p>
 
   <h2>Objectifs</h2>
   <ul>
@@ -47,11 +47,11 @@
     <li>Mettre en relation les joueurs via les technologies Node.js + Socket.IO</li>
   </ul>
 
-  <p>N.B. : Malgrès l'aspect brut du site, la version présentée est bien la dernière version sortie à ce jour. Nous savions pertinemment que le temps necessaire à son accomplissement était bien supérieur à celui dont nous disposions, mais c'est un défi que nous avions voulu relever et c'est pour cela que l'aspect design du site à été revu à la baisse afin de pouvoir proposer une version fonctionnelle de l'application.</p>
+  <p>N.B. : Malgrès l'aspect brut du site, la version présentée est bien la dernière version sortie à ce jour. Nous savions pertinemment que le temps nécessaire à son accomplissement était bien supérieur à celui dont nous disposions, mais c'est un défi que nous avions voulu relever et c'est pour cela que l'aspect design du site a été revu à la baisse afin de pouvoir proposer une version fonctionnelle de l'application.</p>
 
   <h2>Résultat</h2>
   <p>Voici donc la page d'accueil de Projet Z. On y retrouve des fonctionnalités de base comme la création de compte, l'authentification, l'accès à une page de profil ainsi que plusieurs pages statiques comme la FAQ et un formulaire de contact.</p>
-  <p>Un tableau sur la droite de la page permet d'accéder directement aux dernières parties crées et deux boutons : New game et Join game, donnent chacuns vers une page permettant de créer une nouvelle partie et d'afficher toute la liste de celles ouverte par les autres joueurs.</p>
+  <p>Un tableau sur la droite de la page permet d'accéder directement aux dernières parties crées et deux boutons : New game et Join game, donnent chacuns vers une page permettant de créer une nouvelle partie et d'afficher toute la liste de celles ouvertes par les autres joueurs.</p>
   <div class="screenshotDiv">
     <figure>
       <figcaption>Page d'accueil</figcaption>
@@ -67,7 +67,7 @@
     </figure>
   </div>
 
-  <p>En terme de communication avec la base de données, la page des statisques est très intéressante. Elle contient plusieurs informations récupérées depuis la base grâce à plusieurs requêtes personnalisées écritent en <a href="https://symfony.com/doc/3.4/doctrine.html#querying-for-objects-with-dql" title="Consulter la documentation de Symfony sur les DQL" target="_blank"><abbr title="Doctrine Query Language">DQL</abbr></a> et stockées en tant que méthode dans les repositories de nos classes.</p>
+  <p>En terme de communication avec la base de données, la page des statistiques est très intéressante. Elle contient plusieurs informations récupérées depuis la base grâce à plusieurs requêtes personnalisées écritent en <a href="https://symfony.com/doc/3.4/doctrine.html#querying-for-objects-with-dql" title="Consulter la documentation de Symfony sur les DQL" target="_blank"><abbr title="Doctrine Query Language">DQL</abbr></a> et stockées en tant que méthode dans les repositories de nos classes.</p>
   <div class="screenshotDiv">
     <figure>
       <figcaption>Page des statistiques</figcaption>
@@ -75,7 +75,7 @@
     </figure>
   </div>
 
-  <p>Une page de profil permet à l'utilisateur de modifier son email et son mot de passe, elle affiche quelques statisques le concernant et les joueurs qu'il aura ajouté en favori. De plus, en participant au jeu il gagnera de l'expérience lui permettant de passer des niveaux ainsi qu'un point à dépenser (un point par niveau) dans l'une des quatre statisques de son choix sous la rubrique "Bonus stats". Elles seront effectives dans toutes ses futures parties en lui octroyant 1% par point dépensé (par rapport à la statistique de base de la faction qu'il incarne).</p>
+  <p>Une page de profil permet à l'utilisateur de modifier son email et son mot de passe, elle affiche quelques statistiques le concernant et les joueurs qu'il aura ajoutés en favori. De plus, en participant au jeu il gagnera de l'expérience lui permettant de passer des niveaux ainsi qu'un point à dépenser (un point par niveau) dans l'une des quatre statistiques de son choix sous la rubrique "Bonus stats". Elles seront effectives dans toutes ses futures parties en lui octroyant 1 % par point dépensé (par rapport à la statistique de base de la faction qu'il incarne).</p>
   <div class="screenshotDiv">
     <figure>
       <figcaption>Page de profil</figcaption>
@@ -90,9 +90,9 @@
       <img id="screenshotGame" class="result-screenshot" src="{{ asset('img/portfolio/projetz/projetz_game.jpg') }}" alt="Capture d'écran d'une partie en cours">
     </figure>
   </div>
-  <p>Ici nous incarnons nolan, nous sommes à l'intérieur de notre camp (symbolisé par le rectangle vert) et à côté de notre équipière mary. Il est possible de différencier les alliés des ennemis par la couleur de leur pseudo, bleue pour les alliés et rouge pour les ennemis, mais également sur le fait que nous pouvons voir la santé de notre équipe mais pas celle des ennemis. C'est notamment utile lorsque deux joueur utilisent un skin similaire (i.e. l'apparence du personnage) comme c'est le cas ici.</p>
-  <p>La partie inférieure de l'écran offre des informations importantes au joueur : à gauche un chat textuel, au milieu notre niveau et le nombre d'éliminitaion et de décés au cours de la partie, et finalement à droite nos statistiques et notre équipement.</p>
-  <p>Concernant l'écran de jeu central, on y retrouve à droite le marchand de la faction des zombies, des tombes symbolisants des obstacles infranchissables ainsi qu'en bas à gauche un moulin représentant l'une des quatre zones capturable. Vous remarquerez également sur le haut, la progression du score des deux factions ainsi que l'état des zones de la carte (ici deux rouges pour les zombies, une bleue pour les saints et une grise n'appartenant à personne).</p>
+  <p>Ici nous incarnons nolan, nous sommes à l'intérieur de notre camp (symbolisé par le rectangle vert) et à côté de notre équipière mary. Il est possible de différencier les alliés des ennemis par la couleur de leur pseudo, bleue pour les alliés et rouge pour les ennemis, mais également sur le fait que nous pouvons voir la santé de notre équipe, mais pas celle des ennemis. C'est notamment utile lorsque deux joueurs utilisent un skin similaire (c.-à-d. l'apparence du personnage) comme c'est le cas ici.</p>
+  <p>La partie inférieure de l'écran offre des informations importantes au joueur : à gauche un chat textuel, au milieu notre niveau et le nombre d'élimination et de décès au cours de la partie et finalement à droite nos statistiques et notre équipement.</p>
+  <p>Concernant l'écran de jeu central, on y retrouve à droite le marchand de la faction des zombies, des tombes symbolisant des obstacles infranchissables ainsi qu'en bas à gauche un moulin représentant l'une des quatre zones capturables. Vous remarquerez également sur le haut, la progression du score des deux factions ainsi que l'état des zones de la carte (ici deux rouges pour les zombies, une bleue pour les saints et une grise n'appartenant à personne).</p>
 
     <div id="resultImg" class="row">
       <div class="col-12">

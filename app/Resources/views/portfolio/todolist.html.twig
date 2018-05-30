@@ -15,13 +15,13 @@
 
   <p>
     L'objectif de cet exercice était de manipuler les <a href="http://php.net/manual/fr/language.variables.superglobals.php" title="Visiter la page sur les superglobales sur le site de PHP" target="_blank">superglobales</a> suivantes : $_GET, $_POST et $_SESSION, pour la création d'une todolist.
-    Cette liste contient par défaut plusieurs tâches et chacunes d'entre elle possède :
+    Cette liste contient par défaut plusieurs tâches et chacune d'entre elle possède :
     <ul>
       <li>Une couleur</li>
       <li>Une catégorie</li>
       <li>Un état (todo ou completed)</li>
     </ul>
-    Il est également possible de modifier ces informations, de créer de nouvelles tâches, de les filtrer ou encore de les supprimer grâce aux superglobales $_GET et $_POST. La variable $_SESSION quand à elle a été utilisé pour stocker ces changements/ajouts.
+    Il est également possible de modifier ces informations, de créer de nouvelles tâches, de les filtrer ou encore de les supprimer grâce aux superglobales $_GET et $_POST. La variable $_SESSION quant à elle, a été utilisée pour stocker ces changements/ajouts.
   </p>
 
   <h2>Objectifs</h2>
@@ -32,7 +32,7 @@
   </ul>
 
   <h2>Résultat</h2>
-  <p>Voici un aperçu de la page d'acceuil de l'application. On y retrouve toutes les tâches, qu'elles soient terminées ou non, deux boutons permettant d'afficher uniquement celles validées/non validées, ainsi que deux autres boutons, l'un permettant d'afficher une fenêtre de filtres (catégories et couleurs) et le second pour valider le filtrage.</p>
+  <p>Voici un aperçu de la page d'accueil de l'application. On y retrouve toutes les tâches, qu'elles soient terminées ou non, deux boutons permettant d'afficher uniquement celles validées/non validées, ainsi que deux autres boutons, l'un permettant d'afficher une fenêtre de filtres (catégories et couleurs) et le second pour valider le filtrage.</p>
   <p>Pour chacune d'entre elle il est également possible de les valider/annuler, d'éditer leur catégorie/leur couleur, leur nom ainsi que de les supprimer.</p>
   <div class="screenshotDiv">
     <img id="screenshotHome" class="result-screenshot" src="{{ asset('img/portfolio/todolist/todolist_home.jpg') }}" alt="Capture d'écran de la page d'acceuil de la todolist">
@@ -43,7 +43,7 @@
     <img id="screenshotHome" class="result-screenshot" src="{{ asset('img/portfolio/todolist/todolist_todo.jpg') }}" alt="Capture d'écran de la page d'acceuil de la todolist">
   </div>
 
-  <p>Les filtres, passés égalements en paramètre de l'url, permettent d'affiner la liste.</p>
+  <p>Les filtres, passés également en paramètre de l'url, permettent d'affiner la liste.</p>
   <div class="screenshotDiv">
     <img id="screenshotHome" class="result-screenshot" src="{{ asset('img/portfolio/todolist/todolist_filters.jpg') }}" alt="Capture d'écran de la page d'acceuil de la todolist">
   </div>
