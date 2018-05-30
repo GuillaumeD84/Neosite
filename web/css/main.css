@@ -21,12 +21,12 @@ main {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #AAA;
+  background: rgba(120, 0, 0, 1);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #888;
+  background: rgba(160, 0, 0, 1);
 }
 
 h1 {
@@ -35,34 +35,32 @@ h1 {
 
 /* Links */
 a:not(.social-link) {
-  color: rgba(31, 69, 173, 1);
+  color: rgba(180, 0, 0, 1);
 }
 a:visited:not(.social-link) {
-  color: rgba(98, 0, 179, 1);
+  color: rgba(173, 86, 0, 1);
 }
 a:hover:not(.social-link) {
-  color: rgba(33, 123, 255, 1);
+  color: rgba(200, 0, 0, 1);
+  text-shadow: 1px 1px rgba(0, 0, 0, .15);
 }
 a:active:not(.social-link) {
-  color: rgba(98, 0, 179, 1);
+
 }
 
 h1 a, h2 a, h3 a, h4 a {
-  color: rgba(31, 69, 173, 1);
-  text-shadow: 1px 1px 0px rgba(238, 238, 238, .4), 2px 2px 0px rgba(112, 112, 112, .4);
+  text-shadow: 1px 1px 0px rgba(238, 238, 238, .4), 2px 2px 0px rgba(112, 112, 112, .4) !important;
 }
 h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited {
-  color: rgba(31, 69, 120, 1);
-  text-shadow: 1px 1px 0px rgba(238, 238, 238, .4), 2px 2px 0px rgba(112, 112, 112, .4);
+  color: rgba(180, 0, 0, 1) !important;
 }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
   text-decoration: none;
-  color: rgba(33, 100, 200, 1);
-  text-shadow: 1px 1px 0px rgba(238, 238, 238, .5), 2px 2px 0px rgba(112, 112, 112, .7);
+  color: rgba(166, 0, 0, 1) !important;
+  text-shadow: 1px 1px 0px rgba(238, 238, 238, .5), 2px 2px 0px rgba(112, 112, 112, .7) !important;
 }
 h1 a:active, h2 a:active, h3 a:active, h4 a:active {
   text-decoration: none;
-  color: rgba(98, 0, 179, 1);
 }
 
 /* Title and link to Git repo */

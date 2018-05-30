@@ -43,7 +43,8 @@ main > h1 {
 }
 
 .project .category {
-    background-color: skyblue;
+    background-color: rgba(235, 60, 60, 1);
+    color: ghostwhite;
     border-radius: 4px;
     padding: 1px 4px;
     font-weight: bold;
