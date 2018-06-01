@@ -33,9 +33,9 @@
                 <li class="nav-item">
                     <a class="nav-link {{ app.request.get('_route') == 'contact' ? 'active-page' }}" href="{{ path('contact') }}">Contact</a>
                 </li>
-                {# <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link {{ app.request.get('_route') == 'cv' ? 'active-page' }}" href="{{ path('cv') }}">Obtenir mon CV</a>
-                </li> #}
+                </li>
             </ul>
         </div>
     </nav>
@@ -54,9 +54,9 @@
             <li>
                 <a class="{{ app.request.get('_route') == 'contact' ? 'active-page' }}" href="{{ path('contact') }}">Contact</a>
             </li>
-            {# <li>
+            <li>
                 <a class="{{ app.request.get('_route') == 'cv' ? 'active-page' }}" href="{{ path('cv') }}" target="_blank">Obtenir mon CV</a>
-            </li> #}
+            </li>
         </ul>
     </div>
 </aside>
